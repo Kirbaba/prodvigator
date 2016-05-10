@@ -51,3 +51,14 @@
 	}
 }
 	
+@mixin link() {
+    &:hover {
+      @content;  
+    }
+    &:active {
+      @content;
+    }
+    &:focus {
+      @content;
+    }
+}

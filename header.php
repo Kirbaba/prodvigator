@@ -26,33 +26,36 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
-	<header>
+	
+	<!-- open .top-line -->
+	<article class="top-line">
+		<!-- open .container -->
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav" aria-expanded="false">
-								<span class="sr-only">Меню</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse" id="topnav">
-							<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
-								'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php
-								'container'=> false, // обертка списка, тут не нужна
-						  		'menu_id' => 'top-nav-ul', // id для ul
-						  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
-								'menu_class' => 'top-menu', // класс для ul, первые 2 обязательны
-						  		'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению субменю не раскрывать то передайте false		  		
-					  			);
-								wp_nav_menu($args); // выводим верхнее меню
-							?>
-						</div>
-					</nav>
-				</div>
+				<!-- open .top-line__nav -->
+			<div class="top-line__nav">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 			</div>
+			<!-- close .top-line__nav -->
+			<!-- open .top-line__info -->
+			<div class="top-line__info">
+				<!-- open .top-line_social -->
+				<div class="top-line_social">
+					<a href="#" class="top-line_social_btn"><i class="fa fa-vk"></i></a>
+					<a href="#" class="top-line_social_btn"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="top-line_social_btn"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="top-line_social_btn"><i class="fa fa-google-plus"></i></a>
+				</div>
+				<!-- close .top-line_social -->
+				<h3>+7 495 29 09 640 </h3>
+				<a href="#" class="top-line__info-btn">FREE SEO ANALYSIS</a>
+			</div>
+			<!-- close .top-line__info -->
 		</div>
-	</header>
+		<!-- close .container -->
+		
+	</article>
+	<!-- close .top-line -->

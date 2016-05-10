@@ -1,0 +1,87 @@
+.top-line {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	&__nav {
+		float: left;
+		position: relative;
+		ul {
+			padding: 0;
+			li {
+				display: inline-block;
+				a {
+					display: block;
+					color: #282828;
+					font-size: 14px;
+					padding: 10px 20px;
+					border-left: 1px dotted #999999;
+					position: relative;
+					@include transition(.4s);
+					@include link {
+						color: #279BFE;
+					}
+					
+				}
+				&:first-child{
+					a {
+						padding-left: 0;
+						border-left: none;
+					}
+					
+				}
+			}
+		}
+	}
+	&__info {
+		float: right;
+		width: 50%;
+		margin: 15px 0;
+		h3 {
+			display: inline-block;
+			vertical-align: middle;
+			font-family: $b;
+			color: #282828;
+			font-size: 24px;
+			margin: 0 8px;
+		}
+		&-btn {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 10px;
+			font-family: $b;
+			text: uppercase 16px #fff;
+			@include text-shadow(2px 1px 2px rgba(0,0,0,.42));			
+			@include border-radius(2px / 3px);
+			@include background-clip(padding-box);
+			background-color: #a1c527;
+			position: relative;
+			@include transition(.4s);
+			@include link {
+				background-color: darken(#A1C527, 10%);
+			}
+		}
+	}
+	&_social {
+		display: inline-block;
+		vertical-align: middle;		
+		&_btn {			
+			display: inline-block;
+			vertical-align: middle;
+			width: 22px;
+			height: 22px;
+			text-align: center;
+			line-height: 21px;
+			margin: 7px 4px;
+			@include border-radius(4px);
+			@include background-clip(padding-box);
+			background-color: #2899f3;
+			color: #fff;
+			filter: grayscale(0.8);
+			position: relative;
+			@include transition(.4s);
+			@include link {
+				filter: grayscale(0);
+			}
+		}
+	}
+}
