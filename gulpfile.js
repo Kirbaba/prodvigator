@@ -18,6 +18,7 @@ var gulp = require('gulp'), // Подключаем Gulp
     var pxtorem = require('postcss-pxtorem');
     var short = require('postcss-short');
     var stylefmt = require('stylefmt');
+    var assets  = require('postcss-assets');
     // var stylelint = require('stylelint');
     // var reporter = require('postcss-reporter');
 
@@ -26,7 +27,8 @@ gulp.task('css-libs', function() { // Создаем таск Sass
         cssnano
     ]
     return gulp.src([
-            'app/libs/normalize-css/normalize.css',             
+            'app/libs/normalize-css/normalize.css', 
+            'app/libs/fotorama/fotorama.css'            
         ]) // Берем источник        
         .pipe(postcss(processors))
         .pipe(concat('libs.min.css'))
@@ -36,20 +38,31 @@ gulp.task('css-libs', function() { // Создаем таск Sass
         })) // Обновляем CSS на странице при изменении
 });
 
+gulp.task('scripts', function() {
+    return gulp.src([ // Берем все необходимые библиотеки
+            'app/libs/jquery/dist/jquery.min.js',
+            'app/libs/fotorama/fotorama.js', // Берем jQuery
+        ])
+        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+        .pipe(uglify()) // Сжимаем JS файл
+        .pipe(gulp.dest('js')); // Выгружаем в папку app/js
+});
+
 gulp.task('sass', function() { // Создаем таск Sass
     var processors = [
-          autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+        assets,
+        autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
-          }),
-          short,
-          pxtorem({
-              rootValue: 14,
-              replace: false
-          }),
-          stylefmt,
-          cssnano,
-         /* stylelint(), 
-          reporter()*/    
+        }),
+        short,
+        pxtorem({
+            rootValue: 14,
+            replace: false
+        }),
+        stylefmt,
+        cssnano,
+        /* stylelint(), 
+        reporter()*/    
     ];
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -78,16 +91,6 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-gulp.task('scripts', function() {
-    return gulp.src([ // Берем все необходимые библиотеки
-            'app/libs/jquery/dist/jquery.min.js',
-            'app/libs/bootstrap/dist/js/bootstrap.min.js', // Берем jQuery
-        ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('js')); // Выгружаем в папку app/js
-});
-
 gulp.task('img', function() {
     return gulp.src('app/img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({ // Сжимаем их с наилучшими настройками с учетом кеширования
@@ -102,6 +105,13 @@ gulp.task('img', function() {
         .pipe(browserSync.reload({
             stream: true
         })); 
+});
+
+gulp.task('compress', function() {
+  return gulp.src('app/js/*.js')    
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('js'));
+    
 });
 
 gulp.task('watch', ['browser-sync'],  function() {

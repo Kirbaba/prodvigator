@@ -1,2 +1,56 @@
-
+.banner {
+	float: left;
+	width: 100%;
+	&__item {
+		padding: 30px 0;
+		&_description {
+			float: left;
+			width: 50%;
+			h3 {
+				font-family: $b;
+				text: #fff 34px uppercase;
+				margin-bottom: 15px;
+			}
+			p {
+				text: #fff 18px;
+				margin-bottom: 25px;
+			}
+		}
+		&_img {
+			float: left;
+			width: 50%;
+			img {
+				display: block;
+				margin: 10px auto;
+			}
+		}
+	}
+	&_btn {
+		display: block;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+		font-family: $b;
+		text: #fff 20px;
+		width: 220px;
+		height: 48px;
+		margin-right: 15px;
+		@include border-radius(3px / 5px 5px 5px 5px);
+		border: 1px solid #fff;
+		@include transition(.4s);
+		position: relative;
+	}
+	&_services {
+		background-color: #ff6900;
+		@include link {
+			background-color: darken(#FF6900, 10%);
+		}
+	}
+	&_order {
+		background-color: #a1c527;	
+		@include link {
+			background-color: darken(#a1c527, 10%);
+		}
+	}
+}
 

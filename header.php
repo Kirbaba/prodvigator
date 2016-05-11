@@ -59,3 +59,24 @@
 		
 	</article>
 	<!-- close .top-line -->
+
+	<!-- open .navigation -->
+	<nav class="navigation">
+		<!-- open .container -->
+		<div class="container">
+			<!-- open .navigation__logo -->
+			<a href="/" class="navigation__logo">
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="" />
+			</a>
+			<!-- close .navigation__logo -->
+			<!-- open .navigation__menu -->
+			<ul class="navigation__menu">
+				<li><a href="#">Интернет-маркетинг</a></li>
+				<li><a href="#">Оптимизация и продвижение</a></li>
+				<li><a href="#">Консалтинг и аналитика</a></li>
+			</ul>
+			<!-- close .navigation__menu -->
+		</div>
+		<!-- close .container -->
+	</nav>
+	<!-- close .navigation -->
