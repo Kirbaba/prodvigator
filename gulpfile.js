@@ -19,6 +19,7 @@ var gulp = require('gulp'), // Подключаем Gulp
     var short = require('postcss-short');
     var stylefmt = require('stylefmt');
     var assets  = require('postcss-assets');
+    var shortspacing = require('postcss-short-spacing')
     // var stylelint = require('stylelint');
     // var reporter = require('postcss-reporter');
 
@@ -51,10 +52,12 @@ gulp.task('scripts', function() {
 gulp.task('sass', function() { // Создаем таск Sass
     var processors = [
         assets,
+        shortspacing,
+        short,
         autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         }),
-        short,
+
         pxtorem({
             rootValue: 14,
             replace: false
@@ -64,9 +67,9 @@ gulp.task('sass', function() { // Создаем таск Sass
         /* stylelint(), 
         reporter()*/    
     ];
-    return gulp.src('app/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(postcss(processors))
+    return gulp.src('app/sass/**/*.scss')        
+        .pipe(sass().on('error', sass.logError))     
+        .pipe(postcss(processors))   
         .pipe(rename({
             suffix: ".min",
             extname: ".css"
