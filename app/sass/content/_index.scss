@@ -184,8 +184,38 @@
 .whyweare {
 	float: left;
 	width: 100%;
+	h2 {
+		font-family: $b;
+		text: #282828 center 48px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-family: $m;
+		text: #282828 center 17px 1.2;
+		margin: 0;
+	}
+	&__attention {
+		float: left;
+		width: 100%;
+		margin: 65px auto 15px;
+		text-align: center;
+		p {
+			text: #279bfe center 17px 1.2;
+		}
+		h3 {
+			padding-top: 15px;			
+			span {
+				color: #FFF #2899f3;
+				padding: 15px 20px;				
+				font-size: 39px;
+				font-weight: bold;
+				@include text-shadow(2px 1px 2px rgba(0,0,0,.42));
+			}
+		}
+	}
 	&__flex {
 		display: flex;
+		width: 100%;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
 		-webkit-align-items: flex-start;
@@ -214,6 +244,7 @@
 		    }
 		    p {
 		    	font-size: 18px;
+		    	text-align: left;
 		    }
 		   	&:nth-of-type(odd) {
 		   		padding-right: 75px;
@@ -280,6 +311,84 @@
 		margin-left: 25px;
 		@include link {
 			background-color: darken(#2899F3, 10%);
+		}
+	}
+}
+
+.home-blog {
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+	h3 {
+		font-family: $bl;
+		text: uppercase 24px;
+	}
+	&_all {
+		text: #279bfe italic 20px;
+		vertical-align: baseline;
+		float: right;
+		@include transition(.4s);
+		@include link {
+			color: darken(#279BFE, 15%);
+		}
+	}
+	&__flex {
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-align-items: flex-start;
+		        align-items: flex-start;
+	}
+	&__item {
+		margin: 25px 0;
+		width: 300px;
+		&_thumb {
+			width: 100%;
+			height: 175px;
+			@include overflow-img;
+			
+		}
+		h5 {
+			font-family: $b;
+			text: #3a3a3a 14px; 
+		}
+		p {
+			text: #3a3a3a 13px;
+		}
+		&_open {
+			text: #a6a6a6 30px;
+		}
+	}
+	&_date {
+		float: right;
+		width: 100%;
+		text-align: right;
+		margin: 15px 0;
+		text: #b4b4b4 10px;
+	}
+}
+
+.partners {
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+	h2 {
+		font-family: $b;
+		text: #151515 uppercase center 30px;
+	}
+	&__flex {
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: flex-start;
+		        align-items: flex-start;
+	}
+	&__item {
+		width: 225px;
+		margin: 20px 25px;
+		text-align: center;
+		img {
+			max-width: 100%;
 		}
 	}
 }
