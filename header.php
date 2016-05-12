@@ -70,14 +70,19 @@
 				<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
 			</a>
 			<!-- close .navigation__logo -->
-			<a href="#" class="navigation__toggle"></a>
+			<a href="#" class="navigation__toggle"><span></span></a>
 			<!-- open .navigation__menu -->
 			<ul class="navigation__menu">
-				<li><a href="#">Интернет-маркетинг</a></li>
+				<li data-sub="navigation__menu_marketing"><a href="#">Интернет-маркетинг</a></li>
 				<li><a href="#">Оптимизация и продвижение</a></li>
 				<li><a href="#">Консалтинг и аналитика</a></li>
 			</ul>
 			<!-- close .navigation__menu -->
+			<ul class="navigation__menu_bot navigation__menu_marketing">
+				<li><a href="#">Контекстная реклама</a></li>
+				<li><a href="#">Таргетированная реклама</a></li>
+				<li><a href="#">E-mail маркетинг</a></li>
+			</ul>
 		</div>
 		<!-- close .container -->
 	</nav>

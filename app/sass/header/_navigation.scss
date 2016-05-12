@@ -6,12 +6,17 @@
 	&__logo {
 		float: left;
 		width: 225px;
+		position: absolute;
+		left: 15px;
 		img {
 			width: 100%;
+			vertical-align: middle;
 		}
 	}
 	&__menu {
 		float: right;
+		text-align: right;
+		width: 100%;
 		margin: 5px 0;
 		li {
 			display: inline-block;
@@ -37,31 +42,64 @@
 				
 			}
 		}
+		&_bot {
+			display: none;
+			float: left;
+			width: 100%;
+			padding: 0;
+			margin: 10px 0;
+			li {
+				display: inline-block;
+				border-left: 1px dotted #858585;
+				a {
+					display: block;
+					position: relative;
+					text: #fff 14px;
+					padding: 0 10px;
+				}
+				&:first-child{
+					border-left: none;
+					a {
+						padding-left: 0;						
+					}					
+				}
+			}
+		}
 	}
 }
 
 .navigation__toggle {
 	display: none;
 	float: right;
-	width: 35px;
-	height: 2px;
-	margin-top: 12px;
-	background-color: #FFF;
-	display: block;
+	width: 40px;
+	height: 30px;
 	position: relative;
+	span {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #FFF;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		   -moz-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		     -o-transform: translateY(-50%);
+		        transform: translateY(-50%);
+	}
 	&:after, &:before {
 		content: "";
 		width: 100%;
 		height: 2px;
 		background-color: #FFF;
 		display: block;
-		position: relative;
+		position: absolute;
 		
 	}
 	&:after {
-		top: -12px;
+		top: 0;
 	}
 	&:before {
-		bottom: -10px;
+		bottom: 0;
 	}
 }

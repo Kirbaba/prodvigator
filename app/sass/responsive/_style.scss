@@ -134,7 +134,109 @@
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.whyweare__item_text {
+		padding: 0;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    &:nth-of-type(odd) {
+	    	padding: 0;
+	    }
+	}
+	.whyweare__item_icon {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    padding: 0;
+	    text-align: center;
+	    margin: 10px 0;
+	     &:nth-of-type(odd) {
+	    	padding: 0;
+	    	float: right;
+	    }
+	}
+	.whyweare__item {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.phonecall__content {
+		width: 100%;
+		text-align: center;
+	}
+	.phonecall_btn {
+		display: block;
+	}
+	.phonecall__content h4 {
+		display: block;
+		b {
+			display: block;
+			margin: 0;
+		}
+	}
+	.banner__item_img img {
+		width: 100%;
+	}
+	.banner__item_description h3 {
+		font-size: 24px;
+	}
+	.banner_btn {
+		margin: 10px 0;
+	}
+	.inspection h2 {
+		font-size: 28px;
+	}
+	.whyweare h2 {
+		font-size: 30px;
+	}
+	.whyweare__attention h3 span {
+		display: block;
+	}
+	.phonecall {
+		background-position: 50% 50%;
+	}
+	.partners__flex {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.partners__item {
+		width: 100%;
+	}
+	.partners h2 {
+		font-size: 24px;
+	}
+	.footer__contact {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    text-align: center;
+	}
+	.footer__flex {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.footer__logo {
+		margin: 10px 0;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    text-align: center;
+	    img {
+	    	width: 80%;
+	    }
+	}
+	.home-blog__flex {
+		width: 100%;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.infographic__text, .infographic__thumb {
+		padding: 0;
+	}
+	.whyweare__item_text h4 {
+		font-size: 18px;
+	}
+	.navigation {
+		padding: 15px 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -142,5 +244,18 @@
 }
 
 @media only screen and (max-width: 320px) {
-	
+	.top-line__nav ul {
+		margin: 0;
+		li a {
+			padding: 0 10px;
+		}		
+	}
+	.banner__item_description h3 {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	.banner__item_description p {
+		margin: 10px 0;
+		font-size: 14px;
+	}
 }
