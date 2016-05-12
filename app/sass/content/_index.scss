@@ -392,3 +392,53 @@
 		}
 	}
 }
+
+.sitemap {
+	width: 100%;
+	float: left;
+	background-color: #282828;
+	padding: 40px 0;	
+	&__flex {
+		display: flex;
+		-webkit-justify-content: space-between;
+	        justify-content: space-between;
+		-webkit-align-items: flex-start;
+	        align-items: flex-start;
+    	flex-flow: row wrap;
+	}
+	&__item {
+		padding: 0;
+		&_section {
+			font-family: $b;
+			color: #fff;
+		}
+		li {
+			a {
+				text: #d3d2d2 15px;
+				@include link {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.contact-info {
+	@extend .sitemap;
+	color: #FFF;
+	h3 {
+		margin: 5px 0;
+		font-family: $r;
+		font-size: 22px;
+		font-weight: 400;
+	}
+	&_link {
+		margin-top: 30px;
+		display: block;
+		text: #279bfe 22px normal;
+		@include transition(.4s);
+		@include link {
+			color: darken(#279BFE,10%);
+		}
+	}
+}

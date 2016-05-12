@@ -330,6 +330,64 @@ get_header(); // подключаем header.php ?>
 </section>
 <!-- close .partners -->
 
+<!-- open .sitemap -->
+<section class="sitemap">
+	<!-- open .container -->
+	<div class="container">
+		<!-- open .sitemap__flex -->
+		<div class="sitemap__flex">
+			<!-- open .sitemap__item -->
+			<ul class="sitemap__item">
+				<li><a href="#" class="sitemap__item_section">О компании</a></li>
+				<li><a href="#" class="sitemap__item_section">Блог</a></li>
+			</ul>
+			<!-- close .sitemap__item -->
+			<!-- open .sitemap__item -->
+			<ul class="sitemap__item">
+				<li><a href="#" class="sitemap__item_section">Интернет-маркетинг</a></li>
+				<li><a href="#">Контекстная реклама </a></li>
+				<li><a href="#">Таргетированная реклама </a></li>
+				<li><a href="#">E-mail маркетинг </a></li>
+			</ul>
+			<!-- close .sitemap__item -->
+			<!-- open .sitemap__item -->
+			<ul class="sitemap__item">
+				<li><a href="#" class="sitemap__item_section">Оптимизация и продвижение </a></li>
+				<li><a href="#">Продвижение сайта  </a></li>
+				<li><a href="#">Продвижение молодых сайтов  </a></li>
+				<li><a href="#">Технический аудит сайта </a></li>
+				<li><a href="#">Стоимость продвижения </a></li>
+			</ul>
+			<!-- close .sitemap__item -->
+			<!-- open .sitemap__item -->
+			<ul class="sitemap__item">
+				<li><a href="#" class="sitemap__item_section">Консалтинг и аналитика </a></li>
+				<li><a href="#">Веб-аналитика</a></li>
+				<li><a href="#">Установка счетчиков  </a></li>
+				<li><a href="#">Аудит контекстной рекламы </a></li>
+			</ul>
+			<!-- close .sitemap__item -->
+		</div>
+		<!-- close .sitemap__flex -->
+	</div>
+	<!-- close .container -->
+</section>
+<!-- close .sitemap -->
+
+<!-- open .contact-info -->
+<section class="contact-info">
+	<!-- open .container -->
+	<div class="container">
+		<h3>Контакты:</h3>
+		<h3>г. Екатеринбург, ул. Крупносортщиков, 14, офис 417</h3>
+		<h3>+7 895 222 22 22</h3>
+
+		<a href="#" class="contact-info_link">Карта проезда</a>
+	</div>
+	<!-- close .container -->
+</section>
+<!-- close .contact-info -->
+
 
 
 

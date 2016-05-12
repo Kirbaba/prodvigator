@@ -66,7 +66,7 @@
 		<div class="container">
 			<!-- open .navigation__logo -->
 			<a href="/" class="navigation__logo">
-				<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="" />
+				<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
 			</a>
 			<!-- close .navigation__logo -->
 			<!-- open .navigation__menu -->

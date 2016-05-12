@@ -1,0 +1,17 @@
+.footer {
+	@extend .contact-info;
+	padding: 0 0 30px;
+	&__flex {
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-align-items: flex-start;
+		        align-items: flex-start;
+	}
+	&__logo {
+		width: 250px;
+		img {
+			width: 100%;
+		}
+	}
+}
