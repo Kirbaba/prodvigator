@@ -11,6 +11,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); // кодировка ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 	<?php /* RSS и всякое */ ?>
 	<link rel="alternate" type="application/rdf+xml" title="RDF mapping" href="<?php bloginfo('rdf_url'); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss_url'); ?>">
@@ -69,6 +70,7 @@
 				<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
 			</a>
 			<!-- close .navigation__logo -->
+			<a href="#" class="navigation__toggle"></a>
 			<!-- open .navigation__menu -->
 			<ul class="navigation__menu">
 				<li><a href="#">Интернет-маркетинг</a></li>

@@ -1,9 +1,132 @@
 @media only screen and (max-width: 1024px) {
-	
+	.top-line__info {
+		width: 60%;
+		text-align: right;
+	}
+	.navigation__logo {
+		width: 200px;
+	}
+	.navigation__menu li a {
+		font-size: 16px;
+	}
+	.inspection {
+		padding-bottom: 175px;
+	}
+	.infographic__thumb {
+		-webkit-flex-basis: 50%;
+		        flex-basis: 50%;
+	}
+	.infographic__text {
+		-webkit-flex-basis: 50%;
+		        flex-basis: 50%;
+	}
+	.phonecall {
+		background-position: 75% 50%;
+		&__content {
+			width: 80%;
+			h4 {
+				font-size: 21px;
+			}
+		}
+		&_btn {
+			font-size: 16px;
+		}
+	}
 }
 
 @media only screen and (max-width: 980px) {
-	
+	.top-line__nav {
+	    float: none;
+	    width: 100%;
+	    text-align: center;
+	}
+	.phonecall__content {
+		width: 75%;
+	}
+	.phonecall__content h4 {
+		text-align: center;
+		
+	}
+	.phonecall_btn {
+		margin: 15px 0;
+	}
+	.whyweare__item_icon {
+		-webkit-flex-basis: 40%;
+		        flex-basis: 40%;
+	}
+	.whyweare__item_text {
+		margin-right: 25px;
+		-webkit-flex-basis: 58%;
+		        flex-basis: 58%;
+	}
+	.whyweare__item {
+		-webkit-align-items: center;
+		        align-items: center;
+	}
+	.infographic__text, .infographic__thumb {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.infographic__thumb {
+		text-align: center;
+	}
+	.inspection_inp {
+		width: 80%;
+		margin: 15px auto;
+		display: block;
+	}
+	.inspection_btn {
+		width: 50%;
+		margin: 15px auto;
+		display: block;
+	}
+	.inspection h2 {
+		text-align: center;
+	}
+	.banner__item_description {
+		width: 100%;
+		margin: 15px auto;
+		text-align: center;
+	}
+	.banner_btn {
+		display: inline-block;
+		float: none;
+	}
+	.banner__item_img {
+		width: 100%;
+		margin: 15px auto;
+	}
+	.top-line__info {
+	    width: 100%;
+	    text-align: center;
+	}
+	.navigation{
+		&__logo {
+			width: 175px;
+		}
+		&__menu {
+			padding: 0;
+		}
+	}
+	.whyweare__attention h3 span {
+		font-size: 34px;
+	}
+	.navigation__toggle {
+		display: block;
+	}
+	.navigation__menu {
+		display: none;
+		text-align: left;
+		width: 100%;
+		li {
+			display: block;
+			width: 100%;			
+			a {
+				border: none;
+				padding: 10px 0;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 770px) {

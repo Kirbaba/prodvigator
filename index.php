@@ -9,7 +9,7 @@ get_header(); // подключаем header.php ?>
 <!-- open .banner -->
 <section class="banner">
 	<!-- open .fotorama -->
-	<div class="fotorama" data-width="100%" data-height="450" data-transition="crossfade" data-fit="cover" data-nav="false" data-autoplay="5000" data-loop="true">
+	<div class="fotorama" data-width="100%" data-height="450"data-transition="crossfade" data-fit="cover" data-nav="false" data-autoplay="5000" data-loop="true">
 		<!-- open .banner__item -->
 		<div class="banner__item" data-img="<?php bloginfo('template_directory'); ?>/img/slide1.png">
 			<!-- open .container -->
