@@ -61,29 +61,78 @@
 	</article>
 	<!-- close .top-line -->
 
-	<!-- open .navigation -->
-	<nav class="navigation">
-		<!-- open .container -->
-		<div class="container">
-			<!-- open .navigation__logo -->
-			<a href="/" class="navigation__logo">
-				<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
-			</a>
-			<!-- close .navigation__logo -->
-			<a href="#" class="navigation__toggle"><span></span></a>
-			<!-- open .navigation__menu -->
-			<ul class="navigation__menu">
-				<li data-sub="navigation__menu_marketing"><a href="#">Интернет-маркетинг</a></li>
-				<li><a href="#">Оптимизация и продвижение</a></li>
-				<li><a href="#">Консалтинг и аналитика</a></li>
-			</ul>
-			<!-- close .navigation__menu -->
-			<ul class="navigation__menu_bot navigation__menu_marketing">
-				<li><a href="#">Контекстная реклама</a></li>
+<!-- 	open .navigation
+<nav class="navigation">
+	open .container
+	<div class="container">
+		open .navigation__logo
+		<a href="/" class="navigation__logo">
+			<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
+		</a>
+		close .navigation__logo
+		<a href="#" class="navigation__toggle"><span></span></a>
+		open .navigation__menu
+		<ul class="navigation__menu">
+			<li data-sub="navigation__menu_marketing"><a href="#">Интернет-маркетинг</a>
+				<ul class="navigation__menu_bot navigation__menu_marketing">
+					<li><a href="#">Контекстная реклама</a></li>
+					<li><a href="#">Таргетированная реклама</a></li>
+					<li><a href="#">E-mail маркетинг</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Оптимизация и продвижение</a></li>
+			<li><a href="#">Консалтинг и аналитика</a></li>
+		</ul>
+		close .navigation__menu
+		
+	</div>
+	close .container
+</nav>
+close .navigation -->
+
+	<!-- NAVIGATION -->    
+<nav class="navigation">
+
+    <ul class="container">
+    	<a href="/" class="navigation__logo">
+			<img src="<?php bloginfo('template_directory'); ?>/img/Logotype.png" alt="" />
+		</a>
+
+		<a href="#" class="navigation__toggle"><span></span></a>
+      <li>
+        <a class="drop" href="#">Интернет-маркетинг</a>
+        <ul>
+        	<span class="container">
+        		<li><a href="#">Контекстная реклама</a></li>
 				<li><a href="#">Таргетированная реклама</a></li>
 				<li><a href="#">E-mail маркетинг</a></li>
-			</ul>
-		</div>
-		<!-- close .container -->
-	</nav>
-	<!-- close .navigation -->
+        	</span>
+			
+        </ul>
+      </li>
+      <li>
+        <a class="drop" href="#">Оптимизация и продвижение</a>
+        <ul>
+        	<span class="container">
+				<li><a href="#">Продвижение сайта</a></li>
+				<li><a href="#">Продвижение молодых сайтов</a></li>
+				<li><a href="#">Технический аудит сайта</a></li>
+				<li><a href="#">Стоимость продвижения</a></li>
+        	</span>          
+        </ul>
+      </li>
+      <li>
+        <a class="drop" href="#">Консалтинг и аналитика</a>
+        <ul>
+        	<span class="container">
+				<li><a href="#">Веб-аналитика</a></li>
+				<li><a href="#">Установка счетчиков </a></li>
+				<li><a href="#">Сплит-тестирование</a></li>
+				<li><a href="#">Аудит контекстной рекламы</a></li>
+        	</span>
+         
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

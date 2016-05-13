@@ -8,14 +8,15 @@ jQuery(document).ready(function($) {
 	});
 
 	
-	$('.navigation__menu li').hover(function() {	
+	/*$('.navigation__menu li').hover(function() {	
 		var current = ($(this).attr('data-sub'));
 		console.log(current);
 		$("."+current).slideDown();	
 	}, function() {
 		var current = ($(this).attr('data-sub'));
 		$("."+current).slideUp();
-	});
+	});*/
+	
 });
 
 $(window).resize(function() {
