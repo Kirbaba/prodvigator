@@ -1,235 +1,255 @@
 .navigation {
-	
-
-/* 	&__menu {
-	float: right;
-	text-align: right;
-	width: 100%;
-	margin: 5px 0;
-	position: relative;
-	@include transition(.4s);
-	li {
-		display: inline-block;
-		position: relative;
-		@include transition(.4s);
-		a {
-			display: block;
-			color: #FFF;
-			font-size: 18px;
-			font-family: $sb;
-			border-left: 1px dotted #858585;
-			padding: 0 10px 5px;
-			position: relative;
-			@include transition(.4s);
-			@include link {
-				color: #279BFE;
-			}				
-		}
-		ul {
-			background: #BEBEBE;
-			padding:0;
-			text-align: center;
-			display:none;
-			width: 100%;
-			position: absolute;
-			top: 60px;
-			left: 0px;
-		}
-		&:hover {
-			> ul {
-				@include transition(.4s);
-				display: inline-block;
-			}
-		}
-		&:first-child{
-			a {
-				padding-left: 0;
-				border-left: none;
-			}
-			
-		}
-	}
-	&_bot {
-	display: none;
-	display: inline-block;
-	float: left;
-	//position: absolute;
-	left: 0;right: 0;
-	text-align: left;
-	width: 100%;
-	padding: 15px 0;
-	margin: 0 15px;
-	@include transition(.4s);
-	li {
-		display: inline-block;
-		border-left: 1px dotted #858585;
-		a {
-			display: block;
-			position: relative;
-			text: #fff 14px;
-			padding: 0 10px;
-		}
-		&:first-child{
-			border-left: none;
-			a {
-				padding-left: 0;						
-			}					
-		}
-	}
-	
-	}
-} */
+    /* 	&__menu {
+    	float: right;
+    	text-align: right;
+    	width: 100%;
+    	margin: 5px 0;
+    	position: relative;
+    	@include transition(.4s);
+    	li {
+    		display: inline-block;
+    		position: relative;
+    		@include transition(.4s);
+    		a {
+    			display: block;
+    			color: #FFF;
+    			font-size: 18px;
+    			font-family: $sb;
+    			border-left: 1px dotted #858585;
+    			padding: 0 10px 5px;
+    			position: relative;
+    			@include transition(.4s);
+    			@include link {
+    				color: #279BFE;
+    			}				
+    		}
+    		ul {
+    			background: #BEBEBE;
+    			padding:0;
+    			text-align: center;
+    			display:none;
+    			width: 100%;
+    			position: absolute;
+    			top: 60px;
+    			left: 0px;
+    		}
+    		&:hover {
+    			> ul {
+    				@include transition(.4s);
+    				display: inline-block;
+    			}
+    		}
+    		&:first-child{
+    			a {
+    				padding-left: 0;
+    				border-left: none;
+    			}
+    			
+    		}
+    	}
+    	&_bot {
+    	display: none;
+    	display: inline-block;
+    	float: left;
+    	//position: absolute;
+    	left: 0;right: 0;
+    	text-align: left;
+    	width: 100%;
+    	padding: 15px 0;
+    	margin: 0 15px;
+    	@include transition(.4s);
+    	li {
+    		display: inline-block;
+    		border-left: 1px dotted #858585;
+    		a {
+    			display: block;
+    			position: relative;
+    			text: #fff 14px;
+    			padding: 0 10px;
+    		}
+    		&:first-child{
+    			border-left: none;
+    			a {
+    				padding-left: 0;						
+    			}					
+    		}
+    	}
+    	
+    	}
+    } */
 }
 
 .navigation__toggle {
-	display: none;
-	float: right;
-	width: 40px;
-	height: 30px;
-	position: relative;
-	span {
-		display: block;
-		width: 100%;
-		height: 2px;
-		background-color: #FFF;
-		position: absolute;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		   -moz-transform: translateY(-50%);
-		    -ms-transform: translateY(-50%);
-		     -o-transform: translateY(-50%);
-		        transform: translateY(-50%);
-	}
-	&:after, &:before {
-		content: "";
-		width: 100%;
-		height: 2px;
-		background-color: #FFF;
-		display: block;
-		position: absolute;
-		
-	}
-	&:after {
-		top: 0;
-	}
-	&:before {
-		bottom: 0;
-	}
+    display: none;
+    float: right;
+    width: 40px;
+    height: 30px;
+    position: relative;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFF;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    &:after, &:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #FFF;
+        display: block;
+        position: absolute;
+    }
+
+    &:after {
+        top: 0;
+    }
+
+    &:before {
+        bottom: 0;
+    }
 }
 
 .navigation {
-	float: left;
-	width: 100%;
-	color: #fff #333;
-	padding: 30px 0;
-	position: relative;
-	@include transition(.4s);
-	&__logo {
-		float: left;
-		width: 225px;
-		left: 15px;
-		img {
-			width: 100%;
-			vertical-align: middle;
-		}
-	}
-	> ul {
-		text-align: right;
-		padding: 0 15px;
-		margin-top: 0;
-		margin-bottom: 0;
-		position: static;
-		-webkit-box-sizing: border-box;
-		   -moz-box-sizing: border-box;
-		        box-sizing: border-box;
-		span.container {
-			display: block;
-			position: relative;
-			padding: 0;	
-			-webkit-box-sizing: border-box;
-			   -moz-box-sizing: border-box;
-			    	box-sizing: border-box;		
-			padding: 0 15px;
-		}
-		> li {
-			display: inline-block;
-			margin-right: -4px;
-			position: static;
-			padding: 3px 10px 3px 0;
-			z-index: 100;
-			border-left: 1px dotted #858585;
-			a {
-				display: block;
-				color: #FFF;
-				font-size: 18px;
-				font-family: $sb;
-				
-				padding: 0 10px 5px;
-				position: relative;
-				@include transition(.4s);
-				@include link {
-					color: #279BFE;
-				}				
-			}
-			> ul {
-				position: absolute;
-				left: 0;
-				bottom: -20px;			
-				z-index: 101;
-				display: none;				
-				color: #fff #333;
-				right: 0;
-				left: 0;
-				text-align: left;
-				padding: 15px 0;
-				-webkit-box-sizing: border-box;
-				   -moz-box-sizing: border-box;
-				        box-sizing: border-box;
-				@include transition(.4s);
-				li {
-					display: inline-block;
-					border-left: 1px dotted;
-					a {
-						font-family: $r;
-						font-size: 14px;
-						
-					}
-					&:first-of-type {
-						a {
-							padding-left: 0;
-						}
-						
-					}
-				}
+    float: left;
+    width: 100%;
+    color: #fff #333;
+    padding: 30px 0;
+    position: relative;
 
-			}
-			&:hover {
-				a {
-					color: #279BFE;
-				}	
-				> ul {
-					@include transition(.4s);
-			  		display: block;
-			  		a {
-			  			color: #FFF;
-			  			&:hover {
-			  				color: #279BFE;
-			  			}
-			  		}
-				}
-			}			
-			> ul > li {
-				padding: 3px 0;
-			}
-		}
-		li:first-of-type {
-			border-left: none;			
-			
-		}
-		li:last-of-type {
-			a {
-				padding-right: 0;
-			}
-		}
-	}
+    @include transition(0.4s);
+
+    &__logo {
+        float: left;
+        width: 225px;
+        left: 15px;
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    > ul {
+        text-align: right;
+        padding: 0 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: static;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        .js_mobile_nav {
+            span.container {
+                display: block;
+                position: relative;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0 15px;
+            }
+
+            > li {
+                display: inline-block;
+                margin-right: -4px;
+                position: static;
+                padding: 3px 10px 3px 0;
+                z-index: 100;
+                border-left: 1px dotted #858585;
+
+                a {
+                    display: block;
+                    color: #FFF;
+                    font-size: 18px;
+                    font-family: $sb;
+                    padding: 0 10px 5px;
+                    position: relative;
+
+                    @include transition(0.4s);
+
+                    @include link {
+                        color: #279BFE;
+                    }
+                }
+
+                > ul {
+                    position: absolute;
+                    left: 0;
+                    bottom: -20px;
+                    z-index: 101;
+                    display: none;
+                    color: #fff #333;
+                    right: 0;
+                    left: 0;
+                    text-align: left;
+                    padding: 15px 0;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+
+                    @include transition(0.4s);
+
+                    li {
+                        display: inline-block;
+                        border-left: 1px dotted;
+
+                        a {
+                            font-family: $r;
+                            font-size: 14px;
+                        }
+
+                        &:first-of-type {
+                            a {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color: #279BFE;
+                    }
+
+                    > ul {
+                        @include transition(0.4s);
+
+                        display: block;
+
+                        a {
+                            color: #FFF;
+
+                            &:hover {
+                                color: #279BFE;
+                            }
+                        }
+                    }
+                }
+
+                > ul > li {
+                    padding: 3px 0;
+                }
+            }
+
+            li:first-of-type {
+                border-left: none;
+            }
+
+            li:last-of-type {
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
 }

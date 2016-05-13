@@ -32,6 +32,9 @@
 			font-size: 16px;
 		}
 	}
+	.navigation__logo {
+		position: absolute;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -104,7 +107,7 @@
 		&__logo {
 			width: 175px;
 		}
-		&__menu {
+		>ul {
 			padding: 0;
 		}
 	}
@@ -113,17 +116,30 @@
 	}
 	.navigation__toggle {
 		display: block;
-	}
-	.navigation__menu {
+		margin-right: 15px;
+	}	
+
+	.js_mobile_nav {
 		display: none;
-		text-align: left;
 		width: 100%;
-		li {
-			display: block;
-			width: 100%;			
-			a {
+		text-align: left;
+	}
+	.navigation>ul .js_mobile_nav>li {
+		display: block;
+		width: 100%;
+		border: none;
+		padding: 10px 0;
+		&>ul {
+			position: relative;
+			margin-top: 0;
+			padding: 0;
+			li {
+				display: block;
 				border: none;
 				padding: 10px 0;
+				a {
+					padding: 0;
+				}
 			}
 		}
 	}

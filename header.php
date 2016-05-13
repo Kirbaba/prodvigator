@@ -99,8 +99,13 @@ close .navigation -->
 		</a>
 
 		<a href="#" class="navigation__toggle"><span></span></a>
+
+		
+	<span class="js_mobile_nav">
+		
+	
       <li>
-        <a class="drop" href="#">Интернет-маркетинг</a>
+        <a class="drop" data-open="0" href="https://vk.com/">Интернет-маркетинг</a>
         <ul>
         	<span class="container">
         		<li><a href="#">Контекстная реклама</a></li>
@@ -111,7 +116,7 @@ close .navigation -->
         </ul>
       </li>
       <li>
-        <a class="drop" href="#">Оптимизация и продвижение</a>
+        <a class="drop" data-open="0" href="#">Оптимизация и продвижение</a>
         <ul>
         	<span class="container">
 				<li><a href="#">Продвижение сайта</a></li>
@@ -122,7 +127,7 @@ close .navigation -->
         </ul>
       </li>
       <li>
-        <a class="drop" href="#">Консалтинг и аналитика</a>
+        <a class="drop" data-open="0" href="#">Консалтинг и аналитика</a>
         <ul>
         	<span class="container">
 				<li><a href="#">Веб-аналитика</a></li>
@@ -133,6 +138,6 @@ close .navigation -->
          
         </ul>
       </li>
+      </span>
     </ul>
-  </div>
 </nav>
