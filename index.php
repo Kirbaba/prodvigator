@@ -231,21 +231,7 @@ get_header(); // подключаем header.php ?>
 </section>
 <!-- close .whyweare -->	
 
-<!-- open .phonecall -->
-<section class="phonecall">
-	<!-- open .container -->
-	<div class="container">
-		<!-- open .phonecall__content -->
-		<div class="phonecall__content">
-			<h2>Зачем тратить время, силы и деньги на маркетинг, который не работает?</h2>
-			<p>Мы разработаем маркетинговые кампании для вас так, что вы сможете спокойно заниматься тем, что вы умеете лучше всего – своим любимым делом.</p>
-			<h4>Звоните нам   <b>+3 222 555 66 77</b> или <a href="" class="phonecall_btn">Заполните заявку онлайн</a></h4>
-		</div>
-		<!-- close .phonecall__content -->
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .phonecall -->	
+<?php get_template_part('phonecall'); ?>	
 
 <!-- open .home-blog -->
 <section class="home-blog">
@@ -300,93 +286,13 @@ get_header(); // подключаем header.php ?>
 </section>
 <!-- close .home-blog -->
 
-<!-- open .partners -->
-<section class="partners">
-	<!-- open .container -->
-	<div class="container">
-		<h2>Мы являемся официальными партнерами</h2>
-		<!-- open .partners__flex -->
-		<div class="partners__flex">
-			<!-- open .partners__item -->
-			<div class="partners__item">
-				<img src="<?php bloginfo('template_directory'); ?>/img/googlelogo.png" alt="" />
-			</div>
-			<!-- close .partners__item -->
-			<!-- open .partners__item -->
-			<div class="partners__item">
-				<img src="<?php bloginfo('template_directory'); ?>/img/yandexlogo.png" alt="" />
-			</div>
-			<!-- close .partners__item -->
-			<!-- open .partners__item -->
-			<div class="partners__item">
-				<img src="<?php bloginfo('template_directory'); ?>/img/1CBitrixLogo.png" alt="" />
-			</div>
-			<!-- close .partners__item -->	
-		</div>
-		<!-- close .partners__flex -->
-		
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .partners -->
+<?php get_template_part('partners'); ?>
+<?php get_template_part('sitemap'); ?>
+<?php get_template_part('contact-info'); ?>
 
-<!-- open .sitemap -->
-<section class="sitemap">
-	<!-- open .container -->
-	<div class="container">
-		<!-- open .sitemap__flex -->
-		<div class="sitemap__flex">
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">О компании</a></li>
-				<li><a href="#" class="sitemap__item_section">Блог</a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Интернет-маркетинг</a></li>
-				<li><a href="#">Контекстная реклама </a></li>
-				<li><a href="#">Таргетированная реклама </a></li>
-				<li><a href="#">E-mail маркетинг </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Оптимизация и продвижение </a></li>
-				<li><a href="#">Продвижение сайта  </a></li>
-				<li><a href="#">Продвижение молодых сайтов  </a></li>
-				<li><a href="#">Технический аудит сайта </a></li>
-				<li><a href="#">Стоимость продвижения </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Консалтинг и аналитика </a></li>
-				<li><a href="#">Веб-аналитика</a></li>
-				<li><a href="#">Установка счетчиков  </a></li>
-				<li><a href="#">Аудит контекстной рекламы </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-		</div>
-		<!-- close .sitemap__flex -->
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .sitemap -->
 
-<!-- open .contact-info -->
-<section class="contact-info">
-	<!-- open .container -->
-	<div class="container">
-		<h3>Контакты:</h3>
-		<h3>г. Екатеринбург, ул. Крупносортщиков, 14, офис 417</h3>
-		<h3>+7 895 222 22 22</h3>
 
-		<a href="#" class="contact-info_link">Карта проезда</a>
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .contact-info -->
+
 
 
 
