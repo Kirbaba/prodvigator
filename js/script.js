@@ -28,25 +28,29 @@ jQuery(document).ready(function($) {
 		var current = ($(this).attr('data-sub'));
 		$("."+current).slideUp();
 	});*/
-	
+
 });
 
 $(window).resize(function() {
 	fotoramaResize();
 });
 
+
+
 function fotoramaResize() {
 	var $fotoramaDiv = $('.fotorama').fotorama();
 	var fotorama = $fotoramaDiv.data('fotorama');
-	
-	if ($(window).width() <= 980) {
-		fotorama.resize({
-			height: 700
-		});
-	}
-	if ($(window).width() <= 320) {
-		fotorama.resize({
-			height: 700
-		});
+	var fotorama_isset = $('.fotorama');
+	if (fotorama_isset.length > 0) {
+		if ($(window).width() <= 980) {
+				fotorama.resize({
+				height: 700
+			});
+		}
+		if ($(window).width() <= 320) {
+			fotorama.resize({
+				height: 700
+			});
+		}
 	}
 }
