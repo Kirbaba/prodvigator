@@ -35,6 +35,12 @@
 	.navigation__logo {
 		position: absolute;
 	}
+	.our-services__item:after {
+		content: none;
+	}
+	.our-advantages__item p {
+		font-size: 14px;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -142,6 +148,26 @@
 				}
 			}
 		}
+	}
+	.all-services__item {
+		padding: 0 25px;
+	}
+	.our-advantages__center_image {
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+		img {
+			margin-bottom: 0;
+		}
+	}
+	.our-advantages__textwrap {
+		width: 100%;
+		&_left, &_right {
+			text-align: center;
+		}
+	}
+	.all-services {
+		padding-top: 50px;
 	}
 }
 
@@ -252,6 +278,20 @@
 	}
 	.navigation {
 		padding: 15px 0;
+	}
+
+	.all-services__flex, .our-services__flex {
+		width: 100%;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	.all-services__item {
+		padding: 0;
+		-webkit-flex-basis: 80%;
+		        flex-basis: 80%;
+	}
+	.our-advantages h2 {
+		font-size: 28px;
 	}
 }
 

@@ -49,12 +49,12 @@
 		<div class="our-advantages__textwrap our-advantages__textwrap_left">
 			<!-- close .our-advantages__flex -->
 			<div class="our-advantages__item">
-				<p>Используем <br />белые методы </p><span class="icon icon_smile"></span>
+				<p>Используем <br />белые методы <span class="icon icon_smile"></span></p>
 			</div>
 			<!-- close .out-advantages__item -->
 			<!-- open .out-advantages__item -->
 			<div class="our-advantages__item">
-				<p>Не сливаем <br />бюджет </p><span class="icon icon_hands"></span>
+				<p>Не сливаем <br />бюджет <span class="icon icon_hands"></span></p>
 			</div>
 			<!-- close .out-advantages__item -->
 		</div>
@@ -69,12 +69,12 @@
 			
 			<!-- open .out-advantages__item -->
 			<div class="our-advantages__item">
-				<span class="icon icon_money"></span><p>Открытое <br />ценообразование</p>
+				<p><span class="icon icon_money"></span>Открытое <br />ценообразование</p>
 			</div>
 			<!-- close .out-advantages__item -->
 			<!-- open .out-advantages__item -->
 			<div class="our-advantages__item">
-				<span class="icon icon_buisenes"></span><p>Никаких скрытых<br /> комиссий и хитрых<br /> курсов пересчета</p>
+				<p><span class="icon icon_buisenes"></span>Никаких скрытых<br /> комиссий и хитрых<br /> курсов пересчета</p>
 			</div>
 			<!-- close .out-advantages__item -->	
 		</div>
