@@ -1,0 +1,1 @@
+<?php $manifest['standalone'] = true;

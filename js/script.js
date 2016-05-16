@@ -30,23 +30,3 @@ jQuery(document).ready(function($) {
 	});*/
 	
 });
-
-$(window).resize(function() {
-	fotoramaResize();
-});
-
-function fotoramaResize() {
-	var $fotoramaDiv = $('.fotorama').fotorama();
-	var fotorama = $fotoramaDiv.data('fotorama');
-	
-	if ($(window).width() <= 980) {
-		fotorama.resize({
-			height: 700
-		});
-	}
-	if ($(window).width() <= 320) {
-		fotorama.resize({
-			height: 700
-		});
-	}
-}

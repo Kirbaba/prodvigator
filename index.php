@@ -4,102 +4,17 @@
  * @package WordPress
  * @subpackage your-clean-template-3
  */
-get_header(); // подключаем header.php ?> 
+get_header(); // подключаем header.php ?>
 
-<!-- open .banner -->
-<section class="banner">
-	<!-- open .fotorama -->
-	<div class="fotorama" data-width="100%" data-height="450"data-transition="crossfade" data-fit="cover" data-nav="false" data-autoplay="5000" data-loop="true">
-		<!-- open .banner__item -->
-		<div class="banner__item" data-img="<?php bloginfo('template_directory'); ?>/img/slide1.png">
-			<!-- open .container -->
-			<div class="container">
-				<!-- open .banner__item_description -->
-				<div class="banner__item_description">
-					<h3>Поисковое продвижение и раскрутка сайтов</h3>
-					<p>Мы помогаем увеличивать продажи и доходность
-					Вашего бизнеса, привлекаем новых клиентов.</p>
-					<a href="#" class="banner_btn banner_services">Все наши услуги</a>
-					<a href="#" class="banner_btn banner_order">Сделать заказ</a>
-				</div>
-				<!-- close .banner__item_description -->
-				<!-- open .banner__item_img -->
-				<div class="banner__item_img"></div>
-				<!-- close .banner__item_img -->
-			</div>
-			<!-- close .container -->
-		</div>
-		<!-- close .banner__item -->
-		<!-- open .banner__item -->
-		<div class="banner__item" data-img="<?php bloginfo('template_directory'); ?>/img/slide2-1.png" >
-			<!-- open .container -->
-			<div class="container">
-				<!-- open .banner__item_description -->
-				<div class="banner__item_description">
-					<h3>Поисковое продвижение и раскрутка сайтов</h3>
-					<p>Мы продвигаем веб-сайты и создаем эффективные маркетинговые стратегии, целевой трафик и высокую конверсию.</p>
-					<a href="#" class="banner_btn banner_services">Все наши услуги</a>
-					<a href="#" class="banner_btn banner_order">Сделать заказ</a>
-				</div>
-				<!-- close .banner__item_description -->
-				<!-- open .banner__item_img -->
-				<div class="banner__item_img">
-					<img src="<?php bloginfo('template_directory'); ?>/img/corp.png" alt="" />
-				</div>
-				<!-- close .banner__item_img -->
-			</div>
-			<!-- close .container -->
-		</div>
-		<!-- close .banner__item -->
-		<!-- open .banner__item -->
-		<div class="banner__item" data-img="<?php bloginfo('template_directory'); ?>/img/slide-3.png">
-			<!-- open .container -->
-			<div class="container">
-				<!-- open .banner__item_description -->
-				<div class="banner__item_description">
-					<h3>Охват целевой аудитории в нужный момент</h3>
-					<p>Заинтересованные пользователи увидят информацию о ваших товарах и услугах именно тогда, когда они ищут предлагаемые вами товары, услуги.</p>
-					<a href="#" class="banner_btn banner_services">Все наши услуги</a>
-					<a href="#" class="banner_btn banner_order">Сделать заказ</a>
-				</div>
-				<!-- close .banner__item_description -->
-				<!-- open .banner__item_img -->
-				<div class="banner__item_img">
-					<img src="<?php bloginfo('template_directory'); ?>/img/internetmarketingwork.png" alt="" />
-				</div>
-				<!-- close .banner__item_img -->
-			</div>
-			<!-- close .container -->
-		</div>
-		<!-- close .banner__item -->
-	</div>
-	<!-- close .fotorama -->
-	
-</section>
-<!-- close .banner -->
-
-<!-- open .inspection -->
-<section class="inspection">
-	<!-- open .container -->
-	<div class="container">
-		<!-- open .h2 -->
-		<h2>ГОТОВНОСТЬ САЙТА К ПРОДВИЖЕНИЮ</h2>
-		<!-- close .h2 -->
-		<form action="#">
-			<input type="text" class="inspection_inp" placeholder="Ваше имя*" />
-			<input type="text" class="inspection_inp"  placeholder="Сайт*"/>
-			<input type="email" class="inspection_inp"  placeholder="e-mail*"/>
-			<button class="inspection_btn">ПРОВЕРИТЬ</button></form>
-	</div>
-	<!-- close .container -->
-	<!-- open .inspection_image -->
-	<div class="inspection_image">
-		<img src="<?php bloginfo('template_directory'); ?>/img/2-1.png" alt="" />
-	</div>
-	<!-- close .inspection_image -->
-</section>
-<!-- close .inspection -->
-
+<?php
+if ( have_posts() ) :
+    /* Start the Loop */
+    while ( have_posts() ) : the_post();
+        get_template_part( 'template-parts/content', 'home-page' );
+    endwhile;
+else :
+    get_template_part( 'template-parts/content', 'none' );
+endif; ?>
 <!-- open .infographic -->
 <section class="infographic">
 	<!-- open .container -->
@@ -122,26 +37,22 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<!-- close .infographic__text -->
 		</div>
-		
 	</div>
 	<!-- close .container -->
 </section>
 <!-- close .infographic -->
-
 <!-- open .whyweare -->
 <section class="whyweare">
 	<!-- open .container -->
 	<div class="container">
 		<h2>Эффективный интернет-маркетинг</h2>
 		<p><em>Мы все знаем почему вы здесь. Вам нужно увеличить продажи, количество <br /> заказов и клиентов, конверсии на сайте.</em></p>
-
 		<!-- open .whyweare__attention -->
 		<div class="whyweare__attention">
 			<p><em>Не волнуйтесь, вы находитесь в нужном месте и на нужном сайте.</em></p>
 			<h3><span>Почему выбирают продвигатор?</span></h3>
 		</div>
 		<!-- close .whyweare__attention -->
-		
 		<!-- open .whyweare__flex -->
 		<div class="whyweare__flex">
 			<!-- open .whyweare__item -->
@@ -172,7 +83,6 @@ get_header(); // подключаем header.php ?>
 					<p>Не бывает двух одинаковых предприятий, почему маркетинговые и рекламные кампании должны быть одинаковыми? Мы уверены, что каждый веб-сайт и каждый бизнес имеют свои уникальные потребности и, поэтому каждая рекламная кампания должна быть спроектирована так, чтобы отвечать этим уникальным потребностям. Например, новый сайт с для компании с локальным рынком сбыта имеет совершенно иную стратегию раскрутки и продвижения, чем сайт-ветеран для компании с национальным или интернациональным рынком. 100% наших рекомендаций разработаны именно для вас и для ваших специфических задач.</p>
 				</div>
 				<!-- close .whyweare__item_text -->
-				
 			</div>
 			<!-- close .whyweare__item -->
 			<!-- open .whyweare__item -->
@@ -205,7 +115,6 @@ get_header(); // подключаем header.php ?>
 					</p>
 				</div>
 				<!-- close .whyweare__item_text -->
-				
 			</div>
 			<!-- close .whyweare__item -->
 			<!-- open .whyweare__item -->
@@ -225,12 +134,10 @@ get_header(); // подключаем header.php ?>
 			<!-- close .whyweare__item -->	
 		</div>
 		<!-- close .whyweare__flex -->
-		
 	</div>
 	<!-- close .container -->
 </section>
-<!-- close .whyweare -->	
-
+    <!-- close .whyweare -->
 <!-- open .phonecall -->
 <section class="phonecall">
 	<!-- open .container -->
@@ -245,8 +152,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 	<!-- close .container -->
 </section>
-<!-- close .phonecall -->	
-
+    <!-- close .phonecall -->
 <!-- open .home-blog -->
 <section class="home-blog">
 	<!-- open .container -->
@@ -299,7 +205,6 @@ get_header(); // подключаем header.php ?>
 	<!-- close .container -->
 </section>
 <!-- close .home-blog -->
-
 <!-- open .partners -->
 <section class="partners">
 	<!-- open .container -->
@@ -324,71 +229,9 @@ get_header(); // подключаем header.php ?>
 			<!-- close .partners__item -->	
 		</div>
 		<!-- close .partners__flex -->
-		
 	</div>
 	<!-- close .container -->
 </section>
 <!-- close .partners -->
-
-<!-- open .sitemap -->
-<section class="sitemap">
-	<!-- open .container -->
-	<div class="container">
-		<!-- open .sitemap__flex -->
-		<div class="sitemap__flex">
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">О компании</a></li>
-				<li><a href="#" class="sitemap__item_section">Блог</a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Интернет-маркетинг</a></li>
-				<li><a href="#">Контекстная реклама </a></li>
-				<li><a href="#">Таргетированная реклама </a></li>
-				<li><a href="#">E-mail маркетинг </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Оптимизация и продвижение </a></li>
-				<li><a href="#">Продвижение сайта  </a></li>
-				<li><a href="#">Продвижение молодых сайтов  </a></li>
-				<li><a href="#">Технический аудит сайта </a></li>
-				<li><a href="#">Стоимость продвижения </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-			<!-- open .sitemap__item -->
-			<ul class="sitemap__item">
-				<li><a href="#" class="sitemap__item_section">Консалтинг и аналитика </a></li>
-				<li><a href="#">Веб-аналитика</a></li>
-				<li><a href="#">Установка счетчиков  </a></li>
-				<li><a href="#">Аудит контекстной рекламы </a></li>
-			</ul>
-			<!-- close .sitemap__item -->
-		</div>
-		<!-- close .sitemap__flex -->
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .sitemap -->
-
-<!-- open .contact-info -->
-<section class="contact-info">
-	<!-- open .container -->
-	<div class="container">
-		<h3>Контакты:</h3>
-		<h3>г. Екатеринбург, ул. Крупносортщиков, 14, офис 417</h3>
-		<h3>+7 895 222 22 22</h3>
-
-		<a href="#" class="contact-info_link">Карта проезда</a>
-	</div>
-	<!-- close .container -->
-</section>
-<!-- close .contact-info -->
-
-
-
 
 <?php get_footer(); // подключаем footer.php ?>
