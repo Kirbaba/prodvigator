@@ -137,6 +137,25 @@
 </section>
 <!-- close .seo-complex -->
 
+<!-- open .seo-bid -->
+<section class="seo-bid">
+	<!-- open .container -->
+	<div class="container">
+		<h2>заявка на услуги</h2>
+		<!-- open .seo-bid__form -->
+		<form action="#" class="seo-bid__form">
+			<input type="text"  name="seo-bid_name" class="seo-bid__form_input"  placeholder="Ваше имя" />
+			<input type="tel"  name="seo-bid_pghone" class="seo-bid__form_input"  placeholder="Телефон +7 (     )                        " />
+			<input type="email" name="seo-bid_email" class="seo-bid__form_input"  placeholder="E-mail" />
+			<textarea name="seo-bid_text" id="seo-bid_text" class="seo-bid__form_text" placeholder="Комментарии иил вопросы" ></textarea>
+			<button class="seo-bid__form_btn">Отправить</button>
+		</form>
+		<!-- close .seo-bid__form -->
+	</div>
+	<!-- close .container -->
+</section>
+<!-- close .seo-bid -->
+
 <!-- open .seo-complex -->
 <section class="seo-complex">
 	<!-- open .container -->
