@@ -198,6 +198,69 @@
 </section>
 <!-- close .seo-complex -->
 
+<!-- open .seo-price -->
+<section class="seo-price">
+	<!-- open .container -->
+	<div class="container">
+		<!-- open .seo-b_title -->
+		<div class="seo-b_title">
+			<h3><span>Стоимость услуг </span> (в месяц)</h3>
+		</div>
+		<!-- close .seo-b_title -->
+		<!-- open .seo-price__flex -->
+		<div class="seo-price__flex">
+			<!-- open .seo-price__item -->
+			<div class="seo-price__item">
+				<!-- open .seo-price__item_img -->
+				<div class="seo-price__item_img">
+					<img src="<?php bloginfo('template_directory'); ?>/img/image-1.jpg" alt="" />
+				</div>
+				<!-- close .seo-price__item_img -->
+				<h4>SEO продвижение сайтов –
+					<span>от 5 000 руб</span>
+				</h4>
+			</div>
+			<!-- close .seo-price__item -->
+			<!-- open .seo-price__item -->
+			<div class="seo-price__item">
+				<!-- open .seo-price__item_img -->
+				<div class="seo-price__item_img">
+					<img src="<?php bloginfo('template_directory'); ?>/img/image.jpg" alt="" />
+				</div>
+				<!-- close .seo-price__item_img -->
+				<h4>SEO продвижение интернет-магазинов –
+					<span>от 8 000 руб</span>
+				</h4>
+			</div>
+			<!-- close .seo-price__item -->
+		</div>
+		<!-- close .seo-price__flex -->
+	</div>
+	<!-- close .container -->
+</section>
+<!-- close .seo-price -->
+
+<!-- open .seo-freeaudit -->
+<section class="seo-freeaudit">
+	<!-- open .container -->
+	<div class="container">
+		<h2>>>  Заказать бесплатный аудит сайта  <<</h2>
+		<!-- open .seo-freeaudit__form -->
+		<form action="" class="seo-freeaudit__form">
+			<!-- open .seo-freeaudit__form_inp -->
+			<input type="text" class="seo-freeaudit__form_inp" placeholder="Ваше имя" name="seo-freeaudit_name">
+			<!-- close .seo-freeaudit__form_inp -->
+			<!-- open .seo-freeaudit__form_inp -->
+			<input type="tel" class="seo-freeaudit__form_inp" placeholder="Телефон +7 (     )                        " name="seo-freeaudit_phone">
+			<!-- close .seo-freeaudit__form_inp -->
+			<button class="form seo-freeaudit__form_btn">Отправить</button>
+		</form>
+		<!-- close .seo-freeaudit__form -->
+	</div>
+	<!-- close .container -->
+</section>
+<!-- close .seo-freeaudit -->
+
 
 <?php get_template_part('home-blog'); ?>
 <?php get_template_part('partners'); ?>

@@ -227,8 +227,91 @@
 			&_btn {
 				@extend .phonecall_btn;
 				margin-left: auto;
-				outline: none
+				outline: none;
 				border: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&-price {
+		float: left;
+		width: 100%;
+		border-top: 1px solid #dcdcdc;
+		padding-bottom: 50px;
+		.seo-b_title {
+			margin-top: -48px;
+		}
+		&__flex {
+			display: flex;
+			width: 100%;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			-webkit-align-items: flex-start;
+			        align-items: flex-start;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+		}
+		&__item {
+			margin: 25px;
+			-webkit-flex-basis: 45%;
+			        flex-basis: 45%;
+			    text-align: center;
+			&_img {
+				margin: 0 auto;
+				width: 337px;
+				height: 194px;
+				background-color: #9dd5e9;
+				@include overflow-img;
+			}
+			h4 {
+				font-family: $b;
+				font-size: 24px;
+				span {
+					display: block;
+					color: #13A0DD;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	&-freeaudit {
+		float: left;
+		width: 100%;
+		text-align: center;
+		background-color: #13A0DD;
+		padding: 50px 0;
+		h2 {
+			font-family: $bl;
+			color: #fff;
+			font-size: 36px;
+			@include text-shadow(2px 0 2px rgba(0,0,0,.64));
+			margin-top: 0;
+		}
+		&__form {
+			display: flex;
+			width: 100%;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			&_inp {
+				@extend .seo-bid__form_input;
+				-webkit-flex-basis: 40%;
+				        flex-basis: 40%;
+			}
+			&_btn {
+				@extend .phonecall_btn;
+				padding: 0 40px;
+				height: 43px;
+				margin-left: 0;
+				background-color: #282828;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				&:hover, &:active, &:focus {
+					background-color: darken(#282828, 10%);
+				}
 			}
 		}
 	}
