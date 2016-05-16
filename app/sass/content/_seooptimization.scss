@@ -1,0 +1,333 @@
+.seo {
+	&-forwhat {
+		float: left;
+		width: 100%;
+		padding: 50px 0;
+		&_text {
+			width: 65%;
+			float: left;
+		}
+		&_thumb {
+			width: 35%;
+			float: left;			
+			img {
+				width: 100%;
+			}
+		}
+		h3 {
+			font-family: $bl;
+			font-size: 24px;
+			span {
+				color: #0088CF;
+			}
+		}
+		h4 {
+			font-size: 18px;
+			font-family: $sb;
+			float: left;
+			width: 100%;
+			font-size: 18px;
+			line-height: 1.5;
+			span {
+				color: #FFF;
+				background-color: #0088CF;
+				padding: 5px;
+			}
+		}
+		h5 {
+			float: left;
+			font-family: $sb;
+			width: 100%;
+			font-size: 18px;
+			line-height: 1.5;
+			span {
+				color: #FFF;
+				background-color: #0088CF;
+				padding: 5px;
+			}
+		}
+		&_quote {
+			float: left;
+			width: 100%;
+			position: relative;
+			font-family: $l;
+			font-style: italic;
+			margin: 0;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 0 40px;
+			margin: 15px 0;
+			&:before {
+				content: "";
+				size: 22px 33px;
+				position: absolute;
+				background-image: url('../img/quotes.png');
+				background-repeat: no-repeat;
+				left: 0;
+				top: -10px;
+			}
+		}
+	}
+
+	&-advantages {
+		width: 100%;
+		float: left;
+		border-top: 1px solid #dcdcdc;
+		padding-bottom: 50px;
+		.seo-b_title {
+			margin-top: -48px;
+		}
+		&_ribbon {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50px;
+			size: 237px 62px;
+			line-height: 3;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			font-family: $bl;
+			text: #fff uppercase center 18px;
+			background-image: url('../img/ribbon.png');
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			     -o-background-size: contain;
+			        background-size: contain;
+			-webkit-transform: rotate(90deg);
+			   -moz-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			     -o-transform: rotate(90deg);
+			        transform: rotate(90deg);
+		}
+		&__item {
+			display: flex;
+			width: 80%;
+			-webkit-justify-content: flex-start;
+			        justify-content: flex-start;
+			-webkit-align-items: center;
+			        align-items: center;
+			margin: 10px 0;
+			&_text {
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+			    padding-left: 20px;
+			    p {
+			    	font-size: 20px;
+			    	margin: 0;
+			    	b {
+			    		font-family: $bl;
+			    	}
+			    }
+			}
+		}
+	}
+
+	&-complex {
+		float: left;
+		width: 100%;
+		border-top: 1px solid #dcdcdc;
+		padding-bottom: 50px;
+		.seo-b_title {
+			margin-top: -48px;
+		}
+		&__item {
+			width: 100%;
+			display: flex;
+			-webkit-align-content: flex-start;
+			        align-content: flex-start;
+			&_thumb {
+				width: 66px;
+				height: 66px;
+				@include border-radius(33px);
+				@include background-clip(padding-box);
+				background-color: #6f6f6f;
+				@include box-shadow(inset -2px 1px 2px rgba(0,0,0,.25));
+				color: #FFF;
+				text-align: center;
+				line-height: 20px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding-top: 7px;
+				span {
+					font-family: $bl;
+					font-size: 14px;
+					strong {
+						display: block;
+						font-size: 22px;
+					}
+				}
+			}
+			&_text {
+				padding-left: 20px;
+				ul {
+					list-style-type: disc;
+					padding-left: 20px;
+					li {
+						font-size: 16px;
+					}
+				}
+				h4 {
+					font-family: $bl;
+					font-size: 20px;
+					margin: 15px 0;
+				}
+			}
+		}
+	}
+
+	&-bid {
+		float: left;
+		width: 100%;
+		background-color: #F5F6F7;
+		background-image: url('../img/customer-support.png');
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		padding: 50px 0;
+		margin-bottom: 50px;
+		border-width: 3px 0px;
+		border-image: url('../img/border-bid.png') 2 repeat;
+		h2 {
+			font-family: $bl;
+			text: #12304e uppercase 34px;
+			margin: 0 0 15px;
+		}
+		&__form {
+			width: 80%;
+			display: flex;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			-webkit-align-items: flex-start;
+			        align-items: flex-start;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+			&_input {
+				@extend .inspection_inp;
+				-webkit-flex-basis: 32%;
+				        flex-basis: 32%;
+				margin-bottom: 15px;
+			    
+			}
+			&_text {
+				@extend .inspection_inp;
+				-webkit-flex-basis: 100%;
+				        flex-basis: 100%;
+				height: 80px;
+			    resize: none;
+			    margin-bottom: 15px;
+			    padding-top: 10px;
+			}
+			&_btn {
+				@extend .phonecall_btn;
+				margin-left: auto;
+				outline: none;
+				border: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&-price {
+		float: left;
+		width: 100%;
+		border-top: 1px solid #dcdcdc;
+		padding-bottom: 50px;
+		.seo-b_title {
+			margin-top: -48px;
+		}
+		&__flex {
+			display: flex;
+			width: 100%;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			-webkit-align-items: flex-start;
+			        align-items: flex-start;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+		}
+		&__item {
+			margin: 25px;
+			-webkit-flex-basis: 45%;
+			        flex-basis: 45%;
+			    text-align: center;
+			&_img {
+				margin: 0 auto;
+				width: 337px;
+				height: 194px;
+				background-color: #9dd5e9;
+				@include overflow-img;
+			}
+			h4 {
+				font-family: $b;
+				font-size: 24px;
+				span {
+					display: block;
+					color: #13A0DD;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	&-freeaudit {
+		float: left;
+		width: 100%;
+		text-align: center;
+		background-color: #13A0DD;
+		padding: 50px 0;
+		h2 {
+			font-family: $bl;
+			color: #fff;
+			font-size: 36px;
+			@include text-shadow(2px 0 2px rgba(0,0,0,.64));
+			margin-top: 0;
+		}
+		&__form {
+			display: flex;
+			width: 100%;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+			&_inp {
+				@extend .seo-bid__form_input;
+				-webkit-flex-basis: 40%;
+				        flex-basis: 40%;
+			}
+			&_btn {
+				@extend .phonecall_btn;
+				padding: 0 40px;
+				height: 43px;
+				margin-left: 0;
+				background-color: #282828;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				&:hover, &:active, &:focus {
+					background-color: darken(#282828, 10%);
+				}
+			}
+		}
+	}
+
+	&-b_title {
+		float: left;
+		width: 100%;
+		h3 {
+			float: left;
+			font-family: $bl;			
+			font-size: 24px;
+			background-color: #FFF;
+			padding: 0 10px;
+			span {
+				color: #0088CF;
+			}
+		}
+	}
+}
