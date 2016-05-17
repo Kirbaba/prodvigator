@@ -76,39 +76,40 @@
             echo $logo['url']; ?>" alt=""/>
         </a>
         <a href="#" class="navigation__toggle"><span></span></a>
-	<span class="js_mobile_nav">
-		<li>
-            <a class="drop" data-open="0" href="https://vk.com/">Интернет-маркетинг</a>
-            <ul>
-                <span class="container">
-                    <li><a href="#">Контекстная реклама</a></li>
-                    <li><a href="#">Таргетированная реклама</a></li>
-                    <li><a href="#">E-mail маркетинг</a></li>
-                </span>
-            </ul>
-		</li>
-        <li>
-            <a class="drop" data-open="0" href="#">Оптимизация и продвижение</a>
-            <ul>
-                <span class="container">
-                    <li><a href="#">Продвижение сайта</a></li>
-                    <li><a href="#">Продвижение молодых сайтов</a></li>
-                    <li><a href="#">Технический аудит сайта</a></li>
-                    <li><a href="#">Стоимость продвижения</a></li>
-                </span>          
-            </ul>
-        </li>
-        <li>
-            <a class="drop" data-open="0" href="#">Консалтинг и аналитика</a>
-            <ul>
-                <span class="container">
-                    <li><a href="#">Веб-аналитика</a></li>
-                    <li><a href="#">Установка счетчиков </a></li>
-                    <li><a href="#">Сплит-тестирование</a></li>
-                    <li><a href="#">Аудит контекстной рекламы</a></li>
-                </span>
-            </ul>
-        </li>
-      </span>
+        <?php primary_menu( 'primary' ); ?>
+        <!--<span class="js_mobile_nav">
+            <li>
+                <a class="drop" data-open="0" href="https://vk.com/">Интернет-маркетинг</a>
+                <ul>
+                    <span class="container">
+                        <li><a href="#">Контекстная реклама</a></li>
+                        <li><a href="#">Таргетированная реклама</a></li>
+                        <li><a href="#">E-mail маркетинг</a></li>
+                    </span>
+                </ul>
+            </li>
+            <li>
+                <a class="drop" data-open="0" href="#">Оптимизация и продвижение</a>
+                <ul>
+                    <span class="container">
+                        <li><a href="#">Продвижение сайта</a></li>
+                        <li><a href="#">Продвижение молодых сайтов</a></li>
+                        <li><a href="#">Технический аудит сайта</a></li>
+                        <li><a href="#">Стоимость продвижения</a></li>
+                    </span>          
+                </ul>
+            </li>
+            <li>
+                <a class="drop" data-open="0" href="#">Консалтинг и аналитика</a>
+                <ul>
+                    <span class="container">
+                        <li><a href="#">Веб-аналитика</a></li>
+                        <li><a href="#">Установка счетчиков </a></li>
+                        <li><a href="#">Сплит-тестирование</a></li>
+                        <li><a href="#">Аудит контекстной рекламы</a></li>
+                    </span>
+                </ul>
+            </li>
+          </span>-->
     </ul>
 </nav>
