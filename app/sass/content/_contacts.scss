@@ -1,0 +1,127 @@
+.contacts {
+	&-banner {		
+		float: left;
+		position: relative;
+		width: 100%;
+		height: 455px;
+		background-image: url('../img/slide2-1.png');
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			     -o-background-size: cover;
+			        background-size: cover;
+		&__item {
+			@extend .banner__item;
+			&_description {
+				@extend .banner__item_description;
+				position: relative;
+				p {
+					position: relative;
+				}
+			}
+			&_img {
+				@extend .banner__item_img;
+			}
+		}
+		&_arrow {
+			background-image: url('../img/strelka.png');
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			     -o-background-size: contain;
+			        background-size: contain;
+			position: absolute;
+			right: 45px;
+			bottom: -50px;
+			size: 86px 125px;
+			display: block;
+		}
+	}
+	&-content {
+		float: left;
+		width: 100%;
+		padding: 50px 0 0;
+		h3 {
+			font-family: $b;
+			text: #279bfe 30px; 
+			margin: 0 0 15px 0;
+		}
+		&__info {
+			float: left;
+			width: 50%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding-right: 75px;
+			&_item {
+				float: left;
+				width: 100%;
+				margin-bottom: 30px;
+				strong {
+					font-family: $b;
+					font-size: 18px;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 18px;
+					margin: 0;
+				}	
+				a {
+					color: #232;
+					&:hover, &:focus {
+						text-decoration: underline;
+					}
+				}
+			}
+			#contacts_map {
+				height: 250px;
+				width: 100%;
+			}
+			
+		}
+		&__form {
+			float: left;
+			width: 50%;
+			
+			&_inp {
+				@extend .inspection_inp;
+				-webkit-flex-basis: 100%;
+				        flex-basis: 100%;
+			    width: 100%;
+			    margin-bottom: 15px;
+			    
+			}
+			label {
+				display: block;
+				font-family: $b;
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			&_shortbox {
+				width: 48%;
+				position: relative;
+			}
+			&_text {
+				@extend .seo-bid__form_text;
+				width: 100%;
+				margin-bottom: 15px;
+			}
+			&_btn {
+				@extend .seo-freeaudit__form_btn;
+				font-size: 18px;
+				padding: 15px 25px;
+				line-height: normal;
+				height: auto;
+			}
+			form {
+				width: 100%;
+				display: flex;
+				-webkit-justify-content: space-between;
+				        justify-content: space-between;
+				-webkit-align-items: flex-start;
+				        align-items: flex-start;
+				-webkit-flex-wrap: wrap;
+				    -ms-flex-wrap: wrap;
+				        flex-wrap: wrap;
+			}
+		}
+	}
+}

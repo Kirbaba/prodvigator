@@ -20,13 +20,60 @@ jQuery(document).ready(function($) {
 		
 		/* Act on the event */
 	});
-	/*$('.navigation__menu li').hover(function() {	
-		var current = ($(this).attr('data-sub'));
-		console.log(current);
-		$("."+current).slideDown();	
-	}, function() {
-		var current = ($(this).attr('data-sub'));
-		$("."+current).slideUp();
-	});*/
-	
+
+	$(window).resize(function() {
+		fotoramaResize();
+	});
 });
+
+
+
+
+function fotoramaResize() {
+	var fotorama_isset = jQuery('.fotorama');
+	if (fotorama_isset.length > 0) {
+		
+		var $fotoramaDiv = $('.fotorama').fotorama();
+		var fotorama = $fotoramaDiv.data('fotorama');
+		
+	
+		if ($(window).width() <= 980) {
+				fotorama.resize({
+				height: 700
+			});
+		}
+		if ($(window).width() <= 320) {
+			fotorama.resize({
+				height: 700
+			});
+		}
+	}
+}
+ymaps.ready(init);
+        
+function init() {
+    var myMap = new ymaps.Map('contacts_map', {
+            center: [55.472714, 37.300045],
+            zoom: 16,
+            controls: [],
+            
+        })  ;
+    myGeoObject = new ymaps.GeoObject({
+        // Описание геометрии.
+        geometry: {
+            type: "Point",
+            coordinates: [55.472714, 37.300045]
+        },
+        // Свойства.
+        properties: {
+            // Контент метки.
+            preset: 'islands#icon',
+            iconColor: '#0095b6'
+        }
+    });
+    
+    myMap.behaviors.disable('scrollZoom');
+
+    myMap.geoObjects
+        .add(myGeoObject);
+}
