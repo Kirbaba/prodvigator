@@ -28,8 +28,7 @@ gulp.task('css-libs', function() { // Создаем таск Sass
         cssnano
     ]
     return gulp.src([
-            'app/libs/normalize-css/normalize.css', 
-            'app/libs/fotorama/fotorama.css'            
+            'app/libs/normalize-css/normalize.css'            
         ]) // Берем источник        
         .pipe(postcss(processors))
         .pipe(concat('libs.min.css'))
