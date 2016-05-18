@@ -55,7 +55,8 @@
             </div>
             <!-- close .top-line_social -->
             <h3><?= fw_get_db_customizer_option( 'phone' ); ?></h3>
-            <a href="#" class="top-line__info-btn">FREE SEO ANALYSIS</a>
+            <a href="<?= fw_get_db_customizer_option( 'button_link' ); ?>"
+               class="top-line__info-btn"><?= fw_get_db_customizer_option( 'button' ); ?></a>
         </div>
         <!-- close .top-line__info -->
     </div>

@@ -19,7 +19,7 @@
                     <img src="<?php echo $item['item_img']['url']; ?>" alt=""/>
                 </div>
                 <!-- close .seo-price__item_img -->
-                <h4><?php echo $item['item_title']; ?>
+                <h4><?php echo $item['item_text']; ?>
                     <span><?php echo $item['item_price']; ?></span>
                 </h4>
             </div>
