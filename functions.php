@@ -219,7 +219,31 @@ function sendForm() {
             $str .= 'Сайт: ' . $_POST["site"] . ' <br>';
             $str .= 'Почта: ' . $_POST["email"] . ' <br>';
 
-            mail( $adminMail, "Письмо с сайта Продвигатор", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+            wp_mail( $adminMail, "Письмо с сайта Продвигатор", $str, "Content-type: text/html; charset=UTF-8\r\n" );
+        }
+    }
+    wp_die();
+}
+
+// AJAX ACTION
+add_action( 'wp_ajax_contact', 'sendContactForm' );
+add_action( 'wp_ajax_nopriv_contact', 'sendContactForm' );
+
+function sendContactForm() {
+    if ( $_POST ) {
+        $adminMail = get_option( 'admin_email' );
+
+        if ( $_POST['name'] && $_POST['site'] && $_POST['email'] && $_POST['phone'] ) {
+            $str = "С вашего сайта оставили заявку:<br>";
+            $str .= 'Имя: ' . $_POST["name"] . ' <br>';
+            $str .= 'Сайт: ' . $_POST["site"] . ' <br>';
+            $str .= 'Почта: ' . $_POST["email"] . ' <br>';
+            $str .= 'Телефон: ' . $_POST["phone"] . ' <br>';
+            if ( ! empty( $_POST['message'] ) ) {
+                $str .= 'Сообщение: ' . $_POST["message"] . ' <br>';
+            }
+
+            wp_mail( $adminMail, "Письмо с сайта Продвигатор", $str, "Content-type: text/html; charset=UTF-8\r\n" );
         }
     }
     wp_die();

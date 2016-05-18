@@ -19,8 +19,8 @@
     <!-- open .container -->
     <div class="container">
         <h3>Контакты:</h3>
-        <h3>г. Екатеринбург, ул. Крупносортщиков, 14, офис 417</h3>
-        <h3>+7 895 222 22 22</h3>
+        <h3><?= fw_get_db_customizer_option( 'address' ); ?></h3>
+        <h3><?= fw_get_db_customizer_option( 'second_phone' ); ?></h3>
 
         <a href="#" class="contact-info_link">Карта проезда</a>
     </div>
