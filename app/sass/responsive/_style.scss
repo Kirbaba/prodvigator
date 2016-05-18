@@ -41,6 +41,12 @@
 	.our-advantages__item p {
 		font-size: 14px;
 	}
+	.contacts-banner {
+		height: auto;
+	}
+	.contacts-banner_arrow {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -171,6 +177,13 @@
 	}
 	.seo-advantages_ribbon {
 		right: -62px;
+	}
+	.contacts-content__form_shortbox {
+		width: 100%;
+	}
+	.contacts-content__form_inp {
+		margin: 0 0 15px;
+		width: 100%;
 	}
 }
 
@@ -354,6 +367,13 @@
 	}
 	.seo-advantages__item_text {
 		text-align: center;
+	}
+
+	.contacts-content__info, .contacts-content__form {
+		width: 100%;
+	}
+	.contacts-content__info {
+		padding-right: 0;
 	}
 }
 

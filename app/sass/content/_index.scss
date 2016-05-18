@@ -2,11 +2,11 @@
 	float: left;
 	width: 100%;
 	&__item {
-		padding: 30px 0;
+		padding: 50px 0;
 		display: flex;
 	    height: 100%;
 	    box-sizing: border-box;
-	    align-items: center;
+	    align-items: flex-start;
 		&_description {
 			float: left;
 			width: 50%;

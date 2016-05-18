@@ -20,28 +20,23 @@ jQuery(document).ready(function($) {
 		
 		/* Act on the event */
 	});
-	/*$('.navigation__menu li').hover(function() {	
-		var current = ($(this).attr('data-sub'));
-		console.log(current);
-		$("."+current).slideDown();	
-	}, function() {
-		var current = ($(this).attr('data-sub'));
-		$("."+current).slideUp();
-	});*/
 
+	$(window).resize(function() {
+		fotoramaResize();
+	});
 });
 
-$(window).resize(function() {
-	fotoramaResize();
-});
 
 
 
 function fotoramaResize() {
-	var $fotoramaDiv = $('.fotorama').fotorama();
-	var fotorama = $fotoramaDiv.data('fotorama');
-	var fotorama_isset = $('.fotorama');
+	var fotorama_isset = jQuery('.fotorama');
 	if (fotorama_isset.length > 0) {
+		
+		var $fotoramaDiv = $('.fotorama').fotorama();
+		var fotorama = $fotoramaDiv.data('fotorama');
+		
+	
 		if ($(window).width() <= 980) {
 				fotorama.resize({
 				height: 700
