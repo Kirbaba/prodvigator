@@ -100,6 +100,4 @@
 <!-- close .blog__container -->
 
 <?php get_template_part('partners'); ?>
-<?php get_template_part('sitemap'); ?>
-<?php get_template_part('contact-info'); ?>
 <?php get_footer(); ?> 

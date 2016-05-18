@@ -47,6 +47,27 @@
 	.contacts-banner_arrow {
 		display: none;
 	}
+	.blog__flex {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.blog__all {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    width: 100%;
+	}
+	.blog__newest {
+		margin-top: 25px;
+		width: 100%;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	.breadscrubs {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
 }
 
 @media only screen and (max-width: 980px) {
