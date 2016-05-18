@@ -47,7 +47,9 @@ if ( isset( $data['slides'] ) ): ?>
                         </div>
                         <!-- close .banner__item_description -->
                         <!-- open .banner__item_img -->
-                        <div class="banner__item_img"></div>
+                        <div class="banner__item_img">
+                            <img src="<?php echo esc_attr( $slide['extra']['subimage']['url'] ); ?>" alt="">
+                        </div>
                         <!-- close .banner__item_img -->
                     </div>
                     <!-- close .container -->
