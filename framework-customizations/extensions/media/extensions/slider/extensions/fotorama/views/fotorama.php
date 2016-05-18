@@ -42,8 +42,8 @@ if ( isset( $data['slides'] ) ): ?>
                         <div class="banner__item_description">
                             <h3><?php echo esc_attr( $slide['title'] ); ?></h3>
                             <p><?php echo esc_attr( $slide['desc'] ); ?></p>
-                            <a href="#" class="banner_btn banner_services">Все наши услуги</a>
-                            <a href="#" class="banner_btn banner_order">Сделать заказ</a>
+                            <a href="/services" class="banner_btn banner_services">Все наши услуги</a>
+                            <a href="/contacts" class="banner_btn banner_order">Сделать заказ</a>
                         </div>
                         <!-- close .banner__item_description -->
                         <!-- open .banner__item_img -->

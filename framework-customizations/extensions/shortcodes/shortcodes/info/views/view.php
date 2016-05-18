@@ -16,7 +16,7 @@
         <!-- open .infographic__text -->
         <div class="infographic__text">
             <div><?php echo $atts['text']; ?></div>
-            <a href="" class="infographic__text_btn">Все наши услуги</a>
+            <a href="/services" class="infographic__text_btn">Все наши услуги</a>
         </div>
         <!-- close .infographic__text -->
     </div>
