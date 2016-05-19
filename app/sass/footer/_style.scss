@@ -14,4 +14,15 @@
 			width: 100%;
 		}
 	}
+	&__contact {
+		h3 {
+			a {
+				text: #fff;
+				@include transition(.2s);
+				&:hover, &:focus {
+					color: #279BFE;
+				}
+			}
+		}
+	}
 }
