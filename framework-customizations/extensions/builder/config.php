@@ -60,11 +60,6 @@ $cfg['grid.columns'] = array(
         'backend_class'  => 'fw-col-sm-12',
         'frontend_class' => 'fw-col-xs-12',
     ),
-    'div'  => array(
-        'title'          => 'div',
-        'backend_class'  => '',
-        'frontend_class' => '',
-    ),
 );
 
 /**
