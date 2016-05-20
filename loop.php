@@ -5,24 +5,20 @@
  * @subpackage your-clean-template-3
  */ 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
-	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> <?php // заголовок поста и ссылка на его полное отображение (single.php) ?>
-	<div class="meta">
-		<p>Опубликовано: <?php the_time('F j, Y в H:i'); ?></p> <?php // дата и время создания ?>
-		<p>Автор:  <?php the_author_posts_link(); ?></p>
-		<p>Категории: <?php the_category(',') ?></p> <?php // ссылки на категории в которых опубликован пост, через зпт ?>
-		<?php the_tags('<p>Тэги: ', ',', '</p>'); // ссылки на тэги поста ?>
+
+<!-- open .blog__all_item -->
+<div class="blog__all_item">
+    <span class="blog_date"><?php the_time( 'j.m.Y' ); ?></span>
+    <strong><?php the_title(); ?></strong>
+    <!-- open .blog__all_item_thumb -->
+    <div class="blog__all_item_thumb">
+        <?php if ( has_post_thumbnail() ) { ?>
+            <?php the_post_thumbnail( 'full' ); ?>
+        <?php } ?>
 	</div>
-	<div class="row">
-		<?php if ( has_post_thumbnail() ) { ?>
-			<div class="col-sm-3">
-				<a href="<?php the_permalink(); ?>" class="thumbnail">
-					<?php the_post_thumbnail(); ?>
-				</a>
-			</div>
-		<?php } ?>
-		<div class="<?php if ( has_post_thumbnail() ) { ?>col-sm-9<?php } else { ?>col-sm-12<?php } // разные классы в зависимости есть ли миниатюра ?>">
-			<?php the_content(''); // пост превью, до more ?>
-		</div>
-	</div>
-</article>
+    <!-- close .blog__all_item_thumb -->
+    <?php the_content( '' ); // пост превью, до more ?>
+    <a href="<?php the_permalink(); ?>" class="blog__all_item_open">Читать далее <i class="fa fa-long-arrow-right"
+                                                                                    aria-hidden="true"></i></a>
+</div>
+<!-- close .blog__all_item -->

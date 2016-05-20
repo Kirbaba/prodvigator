@@ -90,7 +90,6 @@
 							<!-- close .blog__newest_item -->
 						</div>
 						<!-- close .blog__newest -->
-	
 					</div>
 					<!-- close .blog__flex -->
 					
@@ -112,8 +111,5 @@
 	<!-- close .container -->
 </section>
 <!-- close .blog__container -->
-
 <?php get_template_part('partners'); ?>
-<?php get_template_part('sitemap'); ?>
-<?php get_template_part('contact-info'); ?>
 <?php get_footer(); ?> 
