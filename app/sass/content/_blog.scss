@@ -4,7 +4,7 @@
 	&__content {
 		float: left;
 		width: 100%;		
-		padding: 25px 0;
+		padding: 25px 0 0;
 		border-left: 1px solid #E6E6E6;
 	}
 	&__flex {
@@ -151,6 +151,24 @@
 	    	}
 	    }
 	}
+
+	&-single {
+		&__all {
+			@extend .blog__all; 
+			.blog__all_item {
+				border-bottom: none;
+				padding-bottom: 0;
+				&_back {
+					@extend .blog__all_item_open;
+					i {
+						margin-left: 0;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+
 	.breadscrubs {
 		padding-left: 40px;
 	}
