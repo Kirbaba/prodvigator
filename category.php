@@ -36,9 +36,10 @@ get_header(); // подключаем header.php ?>
                             <?php get_template_part( 'template-parts/blog', 'new' ); // для отображения каждой записи берем шаблон loop.php ?>
                         <?php endwhile; ?>
                     </div>
-                    <?php pagination(); // пагинация, функция нах-ся в function.php ?>
                 </div>
+                <?php pagination(); // пагинация, функция нах-ся в function.php ?>
 			</div>
 		</div>
     </section>
+<?php get_template_part( 'partners' ); ?>
 <?php get_footer(); // подключаем footer.php ?>

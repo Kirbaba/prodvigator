@@ -87,11 +87,8 @@
 							<!-- close .blog__newest_item -->
 						</div>
 						<!-- close .blog__newest -->
-	
 					</div>
 					<!-- close .blog__flex -->
-					
-					
 		</div>
 		<!-- close .blog__content -->
 	</div>

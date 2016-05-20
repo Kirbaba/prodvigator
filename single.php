@@ -5,28 +5,62 @@
  * @subpackage your-clean-template-3
  */
 get_header(); // подключаем header.php ?>
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="<?php content_class_by_sidebar(); // функция подставит класс в зависимости от того есть ли сайдбар, лежит в functions.php ?>">
-				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
-						<h1><?php the_title(); // заголовок поста ?></h1>
-						<div class="meta">
-							<p>Опубликовано: <?php the_time('F j, Y в H:i'); ?></p> <?php // дата и время создания ?>
-							<p>Автор:  <?php the_author_posts_link(); ?></p>
-							<p>Категории: <?php the_category(',') ?></p> <?php // ссылки на категории в которых опубликован пост, через зпт ?>
-							<?php the_tags('<p>Тэги: ', ',', '</p>'); // ссылки на тэги поста ?>
-						</div>
-						<?php the_content(); // контент ?>
-					</article>
-				<?php endwhile; // конец цикла ?>
-				<?php previous_post_link('%link', '<- Предыдущий пост: %title', TRUE); // ссылка на предыдущий пост ?> 
-				<?php next_post_link('%link', 'Следующий пост: %title ->', TRUE); // ссылка на следующий пост ?> 
-				<?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
-			</div>
-			<?php get_sidebar(); // подключаем sidebar.php ?>
-		</div>
-	</div>
+
+<!-- open .blog__container -->
+<section class="blog">
+    <!-- open .container -->
+    <div class="container">
+        <!-- open .blog__content -->
+        <div class="blog__content">
+            <!-- open .breadscrubs -->
+            <?php if ( function_exists( 'fw_ext_breadcrumbs' ) ) {
+                fw_ext_breadcrumbs();
+            } ?>
+            <!-- close .breadscrubs -->
+            <!-- open .blog__flex -->
+            <div class="blog__flex">
+                <!-- open .blog__all -->
+                <div class="blog-single__all">
+                    <?php if ( have_posts() ) {
+                        while ( have_posts() ) : the_post(); // старт цикла ?>
+                            <!-- open .blog__all_item -->
+                            <div class="blog__all_item">
+                                <span class="blog_date"><?php the_time( 'j.m.Y' ); ?></span>
+                                <strong><?php the_title(); ?></strong>
+                                <!-- open .blog__all_item_thumb -->
+                                <div class="blog__all_item_thumb">
+                                    <?php if ( has_post_thumbnail() ) { ?>
+                                        <?php the_post_thumbnail( 'full' ); ?>
+                                    <?php } ?>
+                                </div>
+                                <!-- close .blog__all_item_thumb -->
+                                <?php the_content(); // пост превью, до more ?>
+                                <a href="/category/blog" class="blog__all_item_back"><i class="fa fa-long-arrow-left"
+                                                                                        aria-hidden="true"></i>Назад ко
+                                    всем статьям </a>
+                            </div>
+                            <!-- close .blog__all_item -->
+                        <?php endwhile;
+                    } // конец цикла ?>
+                </div>
+                <!-- close .blog__all -->
+                <!-- open .blog__newest -->
+                <div class="blog__newest">
+                    <!-- open .blog__newest_title -->
+                    <h4 class="blog__newest_title"><span>новое</span></h4>
+                    <!-- close .blog__newest_title -->
+                    <?php $new_query = new WP_Query( 'category_name=blog&posts_per_page=5&paged=0' );
+                    while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
+                        <!-- Do stuff... -->
+                        <?php get_template_part( 'template-parts/blog', 'new' ); // для отображения каждой записи берем шаблон loop.php ?>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+            <!-- close .blog__flex -->
+        </div>
+        <!-- close .blog__content -->
+    </div>
+    <!-- close .container -->
 </section>
+<?php get_template_part( 'partners' ); ?>
 <?php get_footer(); // подключаем footer.php ?>
