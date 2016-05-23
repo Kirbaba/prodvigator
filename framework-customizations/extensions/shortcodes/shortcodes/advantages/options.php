@@ -36,7 +36,7 @@ $options = array(
                 'editor_height' => 200,
             ),
         ),
-        'template'        => '{{ item_title }}', // box title
+        'template'        => '{{- item_title }}', // box title
         'box-controls'    => array( // buttons next to (x) remove box button
             'control-id' => '<small class="dashicons dashicons-smiley"></small>',
         ),
