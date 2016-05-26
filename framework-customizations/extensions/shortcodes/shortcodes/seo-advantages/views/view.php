@@ -6,7 +6,7 @@
 <div class="container">
     <!-- open .seo-b_title -->
     <div class="seo-b_title">
-        <h3><span>Преимущества</span> SEO оптимизации и продвижения</h3>
+        <h3><span><?php echo $atts['blue_title']; ?></span> <?php echo $atts['black_title']; ?></h3>
     </div>
     <!-- close .seo-b_title -->
 
