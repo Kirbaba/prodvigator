@@ -10,7 +10,7 @@ get_header(); // подключаем header.php ?>
 if ( have_posts() ) :
     /* Start the Loop */
     while ( have_posts() ) : the_post();
-        get_template_part( 'template-parts/content', 'home-page' );
+        get_template_part( 'template-parts/content', 'homepage' );
     endwhile;
 else :
     get_template_part( 'template-parts/content', 'none' );
