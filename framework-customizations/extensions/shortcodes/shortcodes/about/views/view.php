@@ -4,7 +4,7 @@
 
 
 <!-- open .seo-forwhat -->
-<section class="seo-forwhat">
+<section class="seo-forwhat page-company">
     <!-- open .container -->
     <div class="container">
         <h3><?php echo esc_attr( $atts['label'] ); ?></h3>
