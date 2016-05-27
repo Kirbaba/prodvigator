@@ -319,6 +319,9 @@
 
 	&-inspection {
 		background-color: #D3D3DB;
+		.container {
+			position: static;
+		}
 	}
 
 	&-b_title {
