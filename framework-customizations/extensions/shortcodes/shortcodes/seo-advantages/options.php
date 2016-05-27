@@ -3,11 +3,19 @@
 }
 
 $options = array(
-    'ribbon' => array(
+    'blue_title' => array(
+        'type'  => 'text',
+        'label' => __( 'Голубой заголовок', '{domain}' ),
+    ),
+    'black_text' => array(
+        'type'  => 'text',
+        'label' => __( 'Черный заголовок', '{domain}' ),
+    ),
+    'ribbon'     => array(
         'type'  => 'text',
         'label' => __( 'Текст на ленточке', '{domain}' ),
     ),
-    'items'  => array(
+    'items'      => array(
         'type'            => 'addable-box',
         'label'           => __( 'Преимущества', 'unyson' ),
         'box-options'     => array(
