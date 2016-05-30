@@ -4,7 +4,7 @@
 
 <!-- open .container -->
 <div class="container">
-    <h2><span>наши</span> услуги</h2>
+    <h1><span>наши</span> услуги</h1>
     <!-- open .our-services__flex -->
     <div class="our-services__flex">
         <?php foreach ( $atts['items'] as $item ) { ?>
