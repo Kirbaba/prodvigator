@@ -66,6 +66,9 @@
 	width: 100%;
 	position: relative;
 	padding: 45px 0;
+	.container {
+		position: static;
+	}
 	&_image {
 		position: absolute;
 		right: 0;
