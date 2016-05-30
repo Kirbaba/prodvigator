@@ -17,6 +17,11 @@ if ( isset( $data['slides'] ) ): ?>
             var $fotoramaDiv = jQuery('.fotorama').fotorama();
             var fotorama = $fotoramaDiv.data('fotorama');
 
+            if (jQuery(window).width() > 980) {
+                fotorama.resize({
+                    height: 450
+                });
+            }
             if (jQuery(window).width() <= 980) {
                 fotorama.resize({
                     height: 700

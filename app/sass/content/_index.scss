@@ -440,6 +440,13 @@
 		font-family: $r;
 		font-size: 22px;
 		font-weight: 400;
+		a {
+			text: #fff;
+			@include transition(.2s);
+			&:hover, &:focus {
+				color: #279BFE;
+			}
+		}
 	}
 	&_link {
 		margin-top: 15px;
