@@ -403,7 +403,7 @@
 	width: 100%;
 	float: left;
 	background-color: #282828;
-	padding: 40px 0;	
+	padding: 20px 0;	
 	&__flex {
 		display: flex;
 		-webkit-justify-content: space-between;
@@ -431,7 +431,10 @@
 
 .contact-info {
 	@extend .sitemap;
+	width: 50%;
 	color: #FFF;
+	text-align: left;
+	padding: 0;
 	h3 {
 		margin: 5px 0;
 		font-family: $r;
@@ -439,7 +442,7 @@
 		font-weight: 400;
 	}
 	&_link {
-		margin-top: 30px;
+		margin-top: 15px;
 		display: block;
 		text: #279bfe 22px normal;
 		@include transition(.4s);
