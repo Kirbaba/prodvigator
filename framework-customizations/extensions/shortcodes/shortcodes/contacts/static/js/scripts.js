@@ -5,18 +5,20 @@ jQuery(document).ready(function () {
             email = jQuery('#contacts-content__form_email').val(),
             site = jQuery('#contacts-content__form_site').val(),
             phone = jQuery('#contacts-content__form_phone').val(),
+            type = jQuery('#contacts-content__form_type').val(),
             message = jQuery('#contacts-content__form_text').val();
 
         jQuery.ajax({
             url: myajax.url,
             type: "POST",
-            data: "action=contact&name=" + name + "&site=" + site + "&email=" + email + "&phone=" + phone + "&message=" + message,
+            data: "action=contact&name=" + name + "&site=" + site + "&email=" + email + "&phone=" + phone + "&message=" + message + "&type=" + type,
             success: function (data) {
                 jQuery('#contacts-content__form_name').val('');
                 jQuery('#contacts-content__form_email').val('');
                 jQuery('#contacts-content__form_phone').val('');
                 jQuery('#contacts-content__form_text').val('');
                 jQuery('#contacts-content__form_site').val('');
+                alert("Спасибо! Ваша заявка принята.");
             }
         });
         return false;

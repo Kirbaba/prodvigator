@@ -10,6 +10,7 @@
     <input type="text" class="inspection_inp inspection_name" placeholder="Ваше имя*"/>
     <input type="text" class="inspection_inp inspection_site" placeholder="Сайт*"/>
     <input type="email" class="inspection_inp inspection_email" placeholder="e-mail*"/>
+    <input type="hidden" class="inspection_type" value="Готовность сайта к продвижению"/>
     <button class="inspection_btn">ПРОВЕРИТЬ</button>
 </div>
 <!-- close .container -->

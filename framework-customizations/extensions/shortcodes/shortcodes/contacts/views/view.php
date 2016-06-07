@@ -71,7 +71,7 @@
             <label for="contacts-content__form_text">Комментарии</label>
             <textarea name="contacts-content__form_text" id="contacts-content__form_text"
                       class="contacts-content__form_text"></textarea>
-
+            <input type="hidden" id="contacts-content__form_type" value="Форма со страницы Контакты"/>
             <button class="contacts-content__form_btn">Отправить</button>
         </form>
     </div>

@@ -215,6 +215,7 @@ function sendForm() {
 
         if ( $_POST['name'] && $_POST['site'] && $_POST['email'] ) {
             $str = "С вашего сайта оставили заявку:<br>";
+	        $str .= 'Форма: ' . $_POST["type"] . ' <br>';
             $str .= 'Имя: ' . $_POST["name"] . ' <br>';
             $str .= 'Сайт: ' . $_POST["site"] . ' <br>';
             $str .= 'Почта: ' . $_POST["email"] . ' <br>';
@@ -235,6 +236,7 @@ function sendContactForm() {
 
         if ( $_POST['name'] && $_POST['site'] && $_POST['email'] && $_POST['phone'] ) {
             $str = "С вашего сайта оставили заявку:<br>";
+	        $str .= 'Форма: ' . $_POST["type"] . ' <br>';
             $str .= 'Имя: ' . $_POST["name"] . ' <br>';
             $str .= 'Сайт: ' . $_POST["site"] . ' <br>';
             $str .= 'Почта: ' . $_POST["email"] . ' <br>';
