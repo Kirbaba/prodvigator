@@ -29,8 +29,8 @@ $posts = get_posts( $args );
                 <!-- close .home-blog__item_thumb -->
                 <small class="home-blog_date"><?php echo mysql2date( 'j.m.Y', $post->post_date ); ?></small>
                 <h5><?php echo $post->post_title; ?></h5>
-                <div><?php the_content( '...' ); ?></div>
-                <a href="<?php echo $post->guid; ?>" class="home-blog__item_open"><i class="fa fa-angle-right"
+                <div><?php the_content( '' ); ?></div>
+                <a href="<?php echo $post->guid; ?>" class="home-blog__item_open">Читать далее<i class="fa fa-angle-right"
                                                                                      aria-hidden="true"></i></a>
             </div>
             <!-- close .home-blog__item -->
