@@ -1,20 +1,26 @@
 .footer {
 	@extend .contact-info;
-	padding: 0 0 30px;
+	width: 100%;
+	padding: 0 0 30px;	
 	&__flex {
 		display: flex;
-		-webkit-justify-content: space-between;
-		        justify-content: space-between;
+		-webkit-justify-content: flex-end;
+		        justify-content: flex-end;
 		-webkit-align-items: flex-start;
 		        align-items: flex-start;
 	}
 	&__logo {
+		text-align: right;
 		width: 250px;
+		display: block;
+		margin-top: 30px;
 		img {
 			width: 100%;
 		}
 	}
 	&__contact {
+		float: right;
+		text-align: right;
 		h3 {
 			a {
 				text: #fff;

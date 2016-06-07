@@ -396,6 +396,23 @@
 	.contacts-content__info {
 		padding-right: 0;
 	}
+	.contact-info,.footer__contact,.footer__flex {
+		width: 100%;
+		float: left;
+		display: block;
+	}
+	.phonecall__content h2, .whyweare__attention h3 span {
+		font-size: 28px;
+	}
+
+	.our-advantages__item {
+		.icon {
+			display: none;
+		}
+	}
+	.our-advantages__item:nth-of-type(2n) {
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {

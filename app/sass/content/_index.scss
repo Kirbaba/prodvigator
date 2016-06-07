@@ -66,6 +66,9 @@
 	width: 100%;
 	position: relative;
 	padding: 45px 0;
+	.container {
+		position: static;
+	}
 	&_image {
 		position: absolute;
 		right: 0;
@@ -135,7 +138,7 @@
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
 	}
-	h3 {
+	h1 {
 		text: center uppercase 28px;
 		flex-basis: 100%;
 		span {
@@ -400,7 +403,7 @@
 	width: 100%;
 	float: left;
 	background-color: #282828;
-	padding: 40px 0;	
+	padding: 20px 0;	
 	&__flex {
 		display: flex;
 		-webkit-justify-content: space-between;
@@ -428,15 +431,25 @@
 
 .contact-info {
 	@extend .sitemap;
+	width: 50%;
 	color: #FFF;
+	text-align: left;
+	padding: 0;
 	h3 {
 		margin: 5px 0;
 		font-family: $r;
 		font-size: 22px;
 		font-weight: 400;
+		a {
+			text: #fff;
+			@include transition(.2s);
+			&:hover, &:focus {
+				color: #279BFE;
+			}
+		}
 	}
 	&_link {
-		margin-top: 30px;
+		margin-top: 15px;
 		display: block;
 		text: #279bfe 22px normal;
 		@include transition(.4s);

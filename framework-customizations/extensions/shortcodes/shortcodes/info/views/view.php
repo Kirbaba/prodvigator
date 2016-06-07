@@ -7,7 +7,7 @@
     <!-- open .infographic__flex -->
     <div class="infographic__flex">
         <!-- close .infographic__flex -->
-        <h3>продвижение и раскрутка сайтов, <span>которые работают на вас!</span></h3>
+        <h1>продвижение и раскрутка сайтов, <span>которые работают на вас!</span></h1>
         <!-- open .infographic__thumb -->
         <div class="infographic__thumb">
             <img src="<?php echo $atts['image']['url']; ?>" alt=""/>
