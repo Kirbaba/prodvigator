@@ -6,7 +6,7 @@
 <div class="container">
     <!-- open .seo-b_title -->
     <div class="seo-b_title">
-        <h3><span>Комплексное</span> SEO продвижение</h3>
+        <h3><span><?php echo $atts['blue_title']; ?></span> <?php echo $atts['title']; ?></h3>
     </div>
     <!-- close .seo-b_title -->
     <!-- open .seo-complex__item -->

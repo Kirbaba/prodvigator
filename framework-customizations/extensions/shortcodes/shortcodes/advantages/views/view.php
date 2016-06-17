@@ -8,8 +8,8 @@
     <p><em><?php echo esc_attr( $atts['sublabel'] ); ?></em></p>
     <!-- open .whyweare__attention -->
     <div class="whyweare__attention">
-        <p><em>Не волнуйтесь, вы находитесь в нужном месте и на нужном сайте.</em></p>
-        <h3><span>Почему выбирают продвигатор?</span></h3>
+        <p><em><?php echo esc_attr( $atts['blue_sublabel'] ); ?></em></p>
+        <h3><span><?php echo esc_attr( $atts['blue_label'] ); ?></span></h3>
     </div>
     <!-- close .whyweare__attention -->
     <?php $i = 0; ?>

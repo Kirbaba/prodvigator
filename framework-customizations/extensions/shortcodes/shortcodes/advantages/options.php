@@ -3,19 +3,31 @@
 }
 
 $options = array(
-    'label'    => array(
+    'label'         => array(
         'label' => __( 'Заголовок', 'unyson' ),
         'desc'  => __( 'Заголовок', 'unyson' ),
         'type'  => 'text',
         'value' => __( 'Эффективный интернет-маркетинг', 'unyson' )
     ),
-    'sublabel' => array(
+    'sublabel'      => array(
         'label' => __( 'Подзаголовок', 'unyson' ),
         'type'  => 'text',
         'value' => __( 'Мы все знаем почему вы здесь. Вам нужно увеличить продажи, количество 
 заказов и клиентов, конверсии на сайте.', 'unyson' )
     ),
-    'items'    => array(
+    'blue_label'    => array(
+        'label' => __( 'Синий заголовок', 'unyson' ),
+        'desc'  => __( 'Заголовок', 'unyson' ),
+        'type'  => 'text',
+        'value' => __( 'Почему выбирают продвигатор?', 'unyson' )
+    ),
+    'blue_sublabel' => array(
+        'label' => __( 'Подзаголовок синий', 'unyson' ),
+        'desc'  => __( 'Заголовок', 'unyson' ),
+        'type'  => 'text',
+        'value' => __( 'Не волнуйтесь, вы находитесь в нужном месте и на нужном сайте.', 'unyson' )
+    ),
+    'items'         => array(
         'type'            => 'addable-box',
         'label'           => __( 'Преимущества', 'unyson' ),
         'box-options'     => array(

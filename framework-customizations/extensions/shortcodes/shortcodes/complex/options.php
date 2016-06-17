@@ -3,15 +3,23 @@
 }
 
 $options = array(
-    'label'    => array(
+    'blue_title' => array(
         'type'  => 'text',
-        'label' => __( 'Заголовок', '{domain}' ),
+        'label' => __( 'Заголовок голубым текстом', '{domain}' ),
     ),
-    'duration' => array(
+    'title'      => array(
+        'type'  => 'text',
+        'label' => __( 'Обычный заголовок', '{domain}' ),
+    ),
+    'label'      => array(
+        'type'  => 'text',
+        'label' => __( 'Название', '{domain}' ),
+    ),
+    'duration'   => array(
         'type'  => 'text',
         'label' => __( 'длительность', '{domain}' ),
     ),
-    'items'    => array(
+    'items'      => array(
         'type'            => 'addable-box',
         'label'           => __( 'Перечень действий', 'unyson' ),
         'box-options'     => array(
